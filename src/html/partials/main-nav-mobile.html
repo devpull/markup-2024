@@ -13,11 +13,14 @@
         <a href="/"><img src="{{root}}img/svg/logo.svg" alt="Лого" /></a>
       </div>
     </div>
-    <nav class="l-components-nav l-components-nav--mobile">
-      <h3>Компоненты</h3>
+    <div class="c-mode-switch">
+
+    </div>
+    <nav class="l-components-nav">
+      <h4 class="l-components-nav__title--mobile">Компоненты</h4>
       <ul>
-        {{#each components}}
-        <li class="l-components-nav__item">
+        {{#each nav}}
+        <li class="l-components-nav__item l-components-nav__item--mobile">
           <a
             class="l-components-nav__link{{#ifpage id}} l-components-nav__link--active{{/ifpage}}"
             href="{{root}}{{id}}.html"

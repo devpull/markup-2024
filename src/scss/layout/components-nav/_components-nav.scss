@@ -3,6 +3,25 @@
 .l-components-nav {
   &__item {
     list-style: none;
+
+    &--mobile {
+      margin-bottom: torem(16);
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: torem(30);
+    }
+
+    &--mobile:nth-last-child(2) {
+      margin-bottom: torem(72);
+    }
+  }
+
+  &__title--mobile {
+    font-size: torem(20);
+    line-height: lh(26, 20);
+    font-weight: 400;
+    color: var(--clr-gray-3);
   }
 
   ul {
@@ -23,7 +42,4 @@
     }
   }
 
-  &--mobile {
-    font-size: torem(20);
-  }
 }
