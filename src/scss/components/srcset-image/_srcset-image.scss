@@ -1,0 +1,41 @@
+@use '../../abstracts/' as *;
+
+.c-scrset-image {
+  position: relative;
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: calc((9 / 16) * 100);
+  }
+  
+  height: 0;
+  padding-bottom: 56.25%; // aspect ratio 16:9  9/16*100 = 56.25%
+  background-image: url(../img/forest_400.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+
+  @include mediaUp('sm') {
+    background-image: url(../img/forest_768.jpg);
+  }
+
+  &>&__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--clr-white);
+  }
+}
+
+.c-scrset-image-300x300 {
+  &__image {
+    object-fit: cover; 
+  }
+}

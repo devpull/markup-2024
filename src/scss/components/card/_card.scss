@@ -29,7 +29,7 @@
     }
   }
 
-  &__tooltip {
+  &__tooltip, &__avatar {
     .c-card__body {
       display: flex;
       justify-content: center;

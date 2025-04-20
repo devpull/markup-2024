@@ -39,7 +39,8 @@
   }
 
   &__component-wrapper:has(> .c-calendar),
-  &__component-wrapper:has(> .c-tooltip) {
+  &__component-wrapper:has(> .c-tooltip),
+  &__component-wrapper:has(> .c-avatar) {
     display: flex;
     justify-content: center;
   }
