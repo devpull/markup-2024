@@ -1,0 +1,20 @@
+.l-main-nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #F9FAFC;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  &__logo {
+    margin: 0 auto;
+  }
+}

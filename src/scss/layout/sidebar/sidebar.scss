@@ -1,0 +1,18 @@
+@use "../../abstracts/" as *;
+
+.l-sidebar {
+
+  &__title {
+    font-size: torem(20);
+    font-weight: 400;
+    line-height: lh(26, 20);
+    color: var(--clr-gray-3);
+
+    margin-top: 0;
+    margin-bottom: torem(16);
+  }
+
+  @include mediaDown("md") {
+    display: none;
+  }
+}

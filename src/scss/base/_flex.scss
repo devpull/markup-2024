@@ -1,0 +1,27 @@
+.h-flex {
+  display: flex;
+}
+
+.h-justify-center {
+  justify-content: center;
+}
+
+.h-align-center {
+  align-items: center;
+}
+
+.h-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.h-flex-grow-1 {
+  flex: 1;
+}
+
+@for $i from 1 through 30 {
+  .h-gap#{$i} {
+    @if $i % 2 == 0 {
+      gap: #{$i}px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use "../../abstracts/" as *;
+
+.c-hamburger {
+  display: flex;
+  align-items: center;
+
+  @include mediaUp("lg") {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+@use "../../abstracts/" as *;
+
+.c-histogram {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: torem(16) torem(24) torem(24);
+  min-height: torem(185);
+  width: 100%;
+  border: 1px solid var(--clr-gray-3);
+  border-radius: 8px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__chart {
+    display: flex;
+    gap: 1px;
+    align-items: flex-end;
+    height: torem(60);
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: torem(16);
+    line-height: lh(24, 16);
+    margin-bottom: torem(6);
+    color: var(--clr-black);
+  }
+
+  &__orders {
+    font-weight: 400;
+    font-size: torem(20);
+    line-height: lh(24, 20);
+    color: var(--clr-black);
+  }
+
+  &__all-href {
+    all: unset;
+    font-weight: 400;
+    font-size: torem(16);
+    line-height: lh(24, 16);
+    color: var(--clr-primary-1);
+  }
+
+  &__bar {
+    flex: 1;
+    background-color: var(--clr-primary-1);
+  }
+}

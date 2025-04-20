@@ -1,0 +1,46 @@
+@use "../../abstracts/" as *;
+
+.l-page {
+  background-color: var(--clr-main-back);
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.l-page {
+  &__main {
+    // flex-grow: 1;
+  }
+
+  &__single {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: torem(56);
+
+    @include mediaDown("md") {
+      display: block;
+      // grid-template-rows: initial;
+    }
+  }
+
+  &__component-wrapper {
+    background-color: var(--clr-white);
+    padding: torem(32) torem(48);
+  }
+
+  &__component-wrapper>.c-calendar {
+    min-width: 300px;
+
+    @include mediaDown("sm") {
+      min-width: auto;
+    }
+  }
+
+  &__component-wrapper:has(> .c-calendar),
+  &__component-wrapper:has(> .c-tooltip) {
+    display: flex;
+    justify-content: center;
+  }
+}

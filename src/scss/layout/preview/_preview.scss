@@ -1,0 +1,25 @@
+@use "../../abstracts/" as *;
+
+.l-preview {
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+
+  gap: 30px;
+  margin-bottom: torem(200);
+
+  &__item {
+    .c-calendar {
+      width: 80%;
+      align-self: center;
+      padding-bottom: 1rem;
+
+      &__item {
+        font-size: 80%;
+      }
+    }
+  }
+  
+}

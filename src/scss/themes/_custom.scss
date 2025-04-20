@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+// General
+$clr-primary-1: #4263EB;
+$clr-primary-2: #7048E8;
+$clr-primary-3: #f784ad;
+
+$percent-darken-by: 10;
+$size-border-radius: 8px;
+// Components
+// Button
+$btn-size-border-radius: $size-border-radius;
+$btn-size-border: 1px;
+$btn-transition: background 100ms ease-in-out, border 100ms ease-in-out;
+// Accordeon

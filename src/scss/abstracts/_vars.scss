@@ -1,0 +1,32 @@
+$break-points: (
+  sm: 600,
+  md: 900,
+  lg: 1200,
+  xl: 1600
+);
+
+// Default font size
+$browser-context: 16 !default;
+
+$clr-primary-1: #4263EB !default;
+$clr-primary-2: #7048E8 !default;
+$clr-primary-3: #f784ad !default;
+
+$clr-hsl-primary-1: hsl(228, 81%, 59%) !default;
+$clr-hsl-primary-2: hsl(255, 78%, 60%) !default;
+$clr-hsl-primary-3: hsl(339, 88%, 74%) !default;
+
+$clr-deg-primary-1: 228;
+$clr-deg-primary-2: 225;
+$clr-deg-primary-3: 339;
+
+$percent-darken-by: 10 !default;
+$size-border-radius: 8px !default;
+
+// Component - Button
+// Size
+$btn-size-border: 1px !default;
+$btn-size-border-radius: $size-border-radius !default;
+// Color weight change
+$btn-percent-darken-by: $percent-darken-by !default;
+$btn-transition: background 100ms ease-in-out, border 100ms ease-in-out !default;

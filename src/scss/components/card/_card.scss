@@ -1,0 +1,54 @@
+@use "../../abstracts/" as *;
+
+.c-card {
+  --clr-card-shadow: rgba(33, 36, 41, .065);
+  --clr-card-back: var(--clr-white);
+
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+
+  flex: 1 0 300px;
+  min-height: 367px;
+  border-radius: 12px;
+  background-color: var(--clr-card-back);
+  box-shadow: 0 2px 4px var(--clr-card-shadow);
+  padding: torem(30) torem(25);
+
+  &__body {
+    // display: flex;
+    flex-grow: 1;
+  }
+
+  &__calendar {
+    .c-card__body {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__tooltip {
+    .c-card__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Roboto", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: torem(21);
+    line-height: lh(25, 16);
+    color: var(--clr-black);
+
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+.icon {
+  &--help-in-circle {
+    width: torem(24);
+    height: torem(24);
+  }
+  &--hamburger {
+    width: torem(32);
+    height: torem(32);
+  }
+  &--close-cross {
+    width: torem(24);
+    height: torem(24);
+  }
+  &--arrow-down {
+    width: torem(24);
+    height: torem(16);
+  }
+}

@@ -1,0 +1,31 @@
+<div id="main-nav-mobile" class="l-main-nav-mobile" style="display: none">
+  <div class="l-container">
+    <div class="l-main-nav-mobile__top">
+      <button
+        id="main-nav-mobile-close"
+        class="c-btn c-btn__with-icon c-btn__round c-btn--gray c-btn__size-32"
+      >
+        <svg class="icon--close-cross">
+          <use xlink:href="{{root}}img/svg/sprite.svg#close-cross" />
+        </svg>
+      </button>
+      <div class="l-main-nav-mobile__logo">
+        <a href="/"><img src="{{root}}img/svg/logo.svg" alt="Лого" /></a>
+      </div>
+    </div>
+    <nav class="l-components-nav l-components-nav--mobile">
+      <h3>Компоненты</h3>
+      <ul>
+        {{#each components}}
+        <li class="l-components-nav__item">
+          <a
+            class="l-components-nav__link{{#ifpage id}} l-components-nav__link--active{{/ifpage}}"
+            href="{{root}}{{id}}.html"
+            >{{title}}</a
+          >
+        </li>
+        {{/each}}
+      </ul>
+    </nav>
+  </div>
+</div>

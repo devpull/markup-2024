@@ -1,0 +1,90 @@
+@use "../../abstracts/" as *;
+
+.c-skeleton {
+  --clr-skeleton-back: var(--clr-white);
+  --clr-skeleton-string: var(--clr-gray-2);
+  --skeleton-border-radius: #{$size-border-radius};
+  --clr-skeleton-border: var(--clr-gray-3);
+  --clr-skeleton-gradient-shine: #f3f5f5;
+
+  background-color: var(--clr-skeleton-back);
+  border-radius: var(--skeleton-border-radius);
+  border: 1px solid var(--clr-skeleton-border);
+  padding: torem(24) torem(40) torem(32) torem(32);
+
+  @mixin animatedBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg,
+        rgba(#fff, 0) 0,
+        rgba(#fff, 0.2) 20%,
+        rgba(#fff, 0.5) 60%,
+        rgba(#fff, 0));
+    animation: shimmer 1.6s infinite;
+    content: '';
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: torem(24);
+
+    &--with-avatar {
+      gap: torem(16);
+      align-items: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__paragraph {
+    flex-grow: 1;
+  }
+
+  &__avatar {
+    background-color: var(--clr-skeleton-string);
+    height: torem(64);
+    width: torem(64);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      @include animatedBackground;
+    }
+  }
+
+  &__string {
+    background-color: var(--clr-skeleton-string);
+    height: torem(20);
+    margin-bottom: torem(8);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+
+    &::after {
+      @include animatedBackground;
+    }
+
+    @for $i from 1 through 10 {
+      &--#{$i * 10} {
+        width: #{$i * 10%};
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

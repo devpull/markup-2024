@@ -1,0 +1,30 @@
+@use "sass:map";
+
+$map: (
+  "m": "margin",
+  "p": "padding",
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left"
+);
+$type: "m", "p";
+$direction: "t", "r", "b", "l";
+
+@each $t in $type {
+  @each $dir in $direction {
+    @for $i from 1 through 60 {
+      .h-#{$t}#{$dir}#{$i} {
+        #{map.get($map, $t)}-#{map.get($map, $dir)}: #{$i}px;
+      }
+    }
+  }
+}
+
+.h-mra {
+  margin-right: auto;
+}
+
+.h-mla {
+  margin-left: auto;
+}

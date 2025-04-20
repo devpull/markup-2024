@@ -1,0 +1,26 @@
+[
+  {
+    "id": "histogram",
+    "title": "Гистограмма"
+  },
+  {
+    "id": "modal",
+    "title": "Модальное окно"
+  },
+  {
+    "id": "tooltip",
+    "title": "Подсказка"
+  },
+  {
+    "id": "calendar",
+    "title": "Календарь"
+  },
+  {
+    "id": "custom-form-elements",
+    "title": "Элементы форм"
+  },
+  {
+    "id": "avatar",
+    "title": "Аватар"
+  }
+]

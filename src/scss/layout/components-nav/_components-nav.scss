@@ -1,0 +1,29 @@
+@use "../../abstracts/" as *;
+
+.l-components-nav {
+  &__item {
+    list-style: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    font-size: torem(16);
+    line-height: lh(24, 16);
+    font-weight: 400;
+
+    color: var(--clr-black);
+    text-decoration: none;
+
+    &--active {
+      color: #D84910;
+    }
+  }
+
+  &--mobile {
+    font-size: torem(20);
+  }
+}

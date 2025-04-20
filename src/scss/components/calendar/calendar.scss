@@ -1,0 +1,62 @@
+@use "../../abstracts/" as *;
+
+.c-calendar {
+  // width: 80%;
+  // min-width: 250px;
+  max-width: 300px;
+  border: 1px solid var(--clr-gray-3);
+  border-radius: 8px;
+  padding: torem(28) torem(30) torem(40);
+
+  color: #334d6e;
+
+  &__title {
+    color: #334D6E;
+    padding-bottom: torem(24);
+
+    font-weight: 600;
+    font-size: torem(20);
+    line-height: lh(24, 20);
+    text-align: center;
+  }
+
+  &__item-day {
+    color: #90A0B7;
+  }
+
+  &__wrapper {
+    padding-bottom: 100%;
+    position: relative;
+  }
+
+  &__inner {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: torem(16);
+    line-height: lh(20, 16);
+    font-weight: 400;
+
+    &-between--active {
+      background-color: #A0B1F5;
+    }
+
+    @include mediaDown("sm") {
+      font-size: torem(12);
+    }
+  }
+
+  &__item-active {
+    background-color: var(--clr-primary-1);
+    color: var(--clr-white);
+  }
+}

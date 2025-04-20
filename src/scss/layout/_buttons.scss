@@ -1,0 +1,10 @@
+.l-buttons {
+  &__heading {
+    min-width: 16ch;
+
+    @media(max-width: 980px) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

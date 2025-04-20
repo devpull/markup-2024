@@ -1,0 +1,31 @@
+@use "../../abstracts/" as *;
+
+.c-modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(196,196,196,.5);
+  z-index: 1;
+
+  &__window {
+    position: absolute;
+    padding: torem(30) torem(40);
+    max-width: torem(458);
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--clr-gray-3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__close {
+    position: absolute;
+    top: torem(16);
+    right: torem(16);
+    cursor: pointer;
+  }
+}
