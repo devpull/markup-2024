@@ -1,0 +1,60 @@
+@use "../../abstracts/" as *;
+
+.c-switch {
+  display: inline-flex;
+  cursor: pointer;
+
+  &__input {
+    opacity: 0;
+    position: absolute;
+    left: -100vw;
+  }
+  
+  &__control {
+    position: relative;
+    width: torem(52);
+    height: torem(28);
+    border: 1px solid var(--clr-gray-2);
+    border-radius: torem(16);
+    box-sizing: border-box;
+    margin-right: torem(12);
+  }
+
+  &__state {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input~&__state &__control::before {
+    content: "";
+    width: torem(24);
+    height: torem(24);
+    position: absolute;
+    left: torem(1);
+    top: torem(1);
+    background-color: var(--clr-gray-2);
+    border-radius: 50%;
+  }
+
+  &__input:checked~&__state &__control {
+    border: 1px solid var(--clr-primary-1);
+  }
+
+  &__input:checked~&__state &__control::before {
+    left: initial;
+    right: torem(1);
+    background-color: var(--clr-primary-1);
+  }
+
+  &__input:disabled~&__state &__control {
+    background-color: var(--clr-gray-2);
+  }
+
+  &__input:disabled~&__state &__control::before {
+    background-color: var(--clr-gray-3);
+  }
+
+  &__input:focus ~ &__state &__title {
+    text-decoration: underline;
+  }
+}
