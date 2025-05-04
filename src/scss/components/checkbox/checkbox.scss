@@ -1,0 +1,41 @@
+@use "../../abstracts/" as *;
+
+.c-checkbox {
+  display: inline-flex;
+}
+
+.c-checkbox__icon {
+  stroke: var(--clr-white);
+  display: none;
+  fill: none;
+}
+
+.c-checkbox__input {
+}
+
+.c-checkbox__state {
+}
+
+.c-checkbox__title {
+}
+
+.c-checkbox__control {
+  width: torem(28);
+  height: torem(28);
+  border-radius: 4px;
+  border: 1px solid var(--clr-gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-checkbox__input:checked ~ .c-checkbox__state .c-checkbox__control {
+  background-color: var(--clr-primary-1);
+}
+
+.c-checkbox__input:checked
+  ~ .c-checkbox__state
+  .c-checkbox__control
+  .c-checkbox__icon {
+  display: block;
+}
