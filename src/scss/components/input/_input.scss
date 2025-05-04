@@ -1,0 +1,27 @@
+@use "../../abstracts/" as *;
+
+.c-input {
+  --clr-input-border: var(--clr-gray-2);
+  --clr-input-placeholder: var(--clr-gray-2);
+
+  &__input::placeholder {
+    color: var(--clr-input-placeholder);
+  }
+
+  &__input {
+    all: unset;
+    display: initial;
+
+    width: 100%;
+
+    font-weight: 400;
+    font-size: torem(20);
+    line-height: lh(26, 20);
+  }
+
+  &__input-wrapper {
+    padding: torem(17) 0 torem(13) torem(24);
+    border: 1px solid var(--clr-input-border);
+    border-radius: 8px;
+  }
+}
