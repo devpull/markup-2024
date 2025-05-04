@@ -23,6 +23,7 @@
     background-color: var(--clr-white);
     border: 2px solid var(--clr-radio-color);
     border-radius: 50%;
+    margin-right: torem(12);
   }
 
   &__input:checked~&__state &__control::after {
