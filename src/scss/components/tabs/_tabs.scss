@@ -1,0 +1,60 @@
+@use "../../abstracts/" as *;
+
+.c-tabs {
+  overflow: auto;
+  margin-bottom: torem(30);
+  scrollbar-width: none;
+
+  &__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+    left: -100vw;
+
+    &[id="#tab-all"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-all"]::after,
+    &[id="#tab-atoms"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-atoms"]::after,
+    &[id="#tab-molecules"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-molecules"]::after,
+    &[id="#tab-organisms"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-organisms"]::after {
+      transform: scaleX(1);
+    }
+
+    &[id="#tab-all"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-all"],
+    &[id="#tab-atoms"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-atoms"],
+    &[id="#tab-molecules"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-molecules"],
+    &[id="#tab-organisms"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-organisms"] {
+      color: var(--clr-black);
+    }
+  }
+
+  &__scroller {
+    display: flex;
+    gap: torem(24);
+  }
+
+  &__item {
+    display: block;
+    height: torem(24);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6px;
+    white-space: nowrap;
+
+    font-size: torem(16);
+    line-height: lh(24, 16);
+    color: var(--clr-gray-3);
+    transition: color 250ms ease-in-out;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 6px;
+      transform: scaleX(0);
+      background-color: var(--clr-black);
+      transition: all 250ms ease-in-out;
+    }
+  }
+
+}
