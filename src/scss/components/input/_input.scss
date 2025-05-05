@@ -3,6 +3,16 @@
 .c-input {
   --clr-input-border: var(--clr-gray-2);
   --clr-input-placeholder: var(--clr-gray-2);
+  --clr-input-invalid: #F03D3E;
+  --clr-icon-valid: #374FC7;
+
+  &__title {
+    font-weight: 500;
+    font-size: torem(12);
+    line-height: lh(18, 12);
+    text-transform: uppercase;
+    margin-bottom: torem(5);
+  }
 
   &__input::placeholder {
     color: var(--clr-input-placeholder);
@@ -11,7 +21,6 @@
   &__input {
     all: unset;
     display: initial;
-
     width: 100%;
 
     font-weight: 400;
@@ -24,4 +33,41 @@
     border: 1px solid var(--clr-input-border);
     border-radius: 8px;
   }
+
+  &__input-wrapper:has(>.c-input__input:disabled) {
+    background-color: var(--clr-gray-1);
+    cursor:no-drop;
+  }
+
+  &__input-wrapper:has(>.c-input__input:focus) {
+    border: 1px solid var(--clr-primary-1);
+  }
+
+  &__input-wrapper:has(>.c-input__input.c-input__invalid) {
+    border: 1px solid var(--clr-input-invalid);
+  }
+
+  &__input-wrapper:has(>.c-input__icon) {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: torem(18);
+    right: torem(18);
+    opacity: 0;
+
+    &--valid {
+      stroke: var(--clr-icon-valid);
+    }
+    &--invalid {
+      stroke: var(--clr-input-invalid);
+    }
+  }
+
+  .c-input__icon.c-input__icon--valid,
+  .c-input__icon.c-input__icon--invalid {
+    opacity: 1;
+  }
+
 }

@@ -25,4 +25,13 @@
     width: torem(15);
     height: torem(13);
   }
+  &--check-circle {
+    width: torem(24);
+    height: torem(24);
+    fill: none;
+  }
+  &--alert-triangle {
+    width: torem(24);
+    height: torem(24);
+  }
 }
