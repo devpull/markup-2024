@@ -18,6 +18,7 @@
     border-radius: torem(16);
     box-sizing: border-box;
     margin-right: torem(12);
+    transition: background-color .2s;
   }
 
   &__state {
@@ -25,25 +26,28 @@
     align-items: center;
   }
 
-  &__input~&__state &__control::before {
+  &__control::before {
     content: "";
     width: torem(24);
     height: torem(24);
     position: absolute;
     left: torem(1);
-    top: torem(1);
+    top: calc(50% - torem(12));
     background-color: var(--clr-gray-2);
     border-radius: 50%;
+    transition: left .2s;
   }
 
   &__input:checked~&__state &__control {
     border: 1px solid var(--clr-primary-1);
+    background-color: var(--clr-primary-1);
   }
 
   &__input:checked~&__state &__control::before {
-    left: initial;
-    right: torem(1);
-    background-color: var(--clr-primary-1);
+    left: torem(25);
+    // right: torem(1);
+    background-color: var(--clr-white);
+    // transform: translateX(100%);
   }
 
   &__input:disabled~&__state &__control {
