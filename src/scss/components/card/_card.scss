@@ -22,14 +22,14 @@
     flex-grow: 1;
   }
 
-  &__calendar {
+  &--calendar {
     .c-card__body {
       display: flex;
       justify-content: center;
     }
   }
 
-  &__tooltip, &__avatar {
+  &--tooltip, &--avatar {
     .c-card__body {
       display: flex;
       justify-content: center;
@@ -37,9 +37,17 @@
     }
   }
 
+  &__type {
+    font-weight: 400;
+    font-size: torem(16);
+    line-height: torem(19);
+  }
+
   &__title {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 
     font-family: "Roboto", system-ui, sans-serif;
     font-weight: 500;

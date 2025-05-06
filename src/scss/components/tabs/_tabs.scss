@@ -4,6 +4,8 @@
   overflow: auto;
   margin-bottom: torem(30);
   scrollbar-width: none;
+  background-color: var(--clr-white);
+  border-bottom: 1px solid var(--clr-gray-2);
 
   &__input {
     position: absolute;
@@ -30,7 +32,7 @@
   }
 
   &__scroller {
-    display: flex;
+    display: inline-flex;
     gap: torem(24);
   }
 
@@ -39,8 +41,9 @@
     height: torem(24);
     margin: 0;
     padding: 0;
-    margin-bottom: 6px;
+    margin-bottom: 13px;
     white-space: nowrap;
+    cursor: pointer;
 
     font-size: torem(16);
     line-height: lh(24, 16);
@@ -49,8 +52,9 @@
 
     &::after {
       content: "";
+      margin-top: torem(7);
       display: block;
-      height: 6px;
+      height: torem(6);
       transform: scaleX(0);
       background-color: var(--clr-black);
       transition: all 250ms ease-in-out;

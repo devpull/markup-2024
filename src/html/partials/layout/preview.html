@@ -1,33 +1,37 @@
 <section class="l-preview">
-  <div class="l-preview__item">
+  <div class="l-preview__item" data-type="organism">
     <a href="{{root}}histogram.html" class="c-card">
       <div class="c-card__body">{{> histogram}}</div>
       <div class="c-card__title">
         <p>Гистограмма</p>
+        <p class="c-card__type">Организм</p>
       </div>
     </a>
   </div>
-  <div class="l-preview__item">
-    <a href="{{root}}calendar.html" class="c-card c-card__calendar">
+  <div class="l-preview__item" data-type="molecule">
+    <a href="{{root}}calendar.html" class="c-card c-card--calendar">
       <div class="c-card__body">{{> calendar}}</div>
       <div class="c-card__title">
         <p>Календарь</p>
+        <p class="c-card__type">Молекула</p>
       </div>
     </a>
   </div>
-  <div class="l-preview__item">
-    <a href="{{root}}tooltip.html" class="c-card c-card__tooltip">
+  <div class="l-preview__item" data-type="atom">
+    <a href="{{root}}tooltip.html" class="c-card c-card--tooltip">
       <div class="c-card__body">{{> tooltip-visible}}</div>
       <div class="c-card__title">
         <p>Подсказка</p>
+        <p class="c-card__type">Атом</p>
       </div>
     </a>
   </div>
-  <div class="l-preview__item">
-    <a href="{{root}}avatar.html" class="c-card c-card__avatar">
+  <div class="l-preview__item" data-type="atom">
+    <a href="{{root}}avatar.html" class="c-card c-card--avatar">
       <div class="c-card__body">{{> avatar}}</div>
       <div class="c-card__title">
         <p>Аватар</p>
+        <p class="c-card__type">Атом</p>
       </div>
     </a>
   </div>

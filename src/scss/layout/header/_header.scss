@@ -8,10 +8,6 @@
   padding: 2rem 0 0 0;
   margin-bottom: torem(30);
 
-  @include mediaDown("lg") {
-    border-bottom: 1px solid var(--clr-gray-2);
-  }
-
   &__top {
     margin-bottom: torem(38);
 
@@ -37,5 +33,9 @@
       font-size: torem(28);
       line-height: lh(38, 28);
     }
+  }
+
+  &~.c-tabs {
+    margin-top: torem(-30);
   }
 }
