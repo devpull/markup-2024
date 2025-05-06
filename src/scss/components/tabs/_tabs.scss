@@ -32,8 +32,12 @@
   }
 
   &__scroller {
-    display: inline-flex;
+    display: flex;
     gap: torem(24);
+    
+    @include mediaDown("md") {
+      display: inline-flex;
+    }
   }
 
   &__item {
