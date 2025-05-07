@@ -26,6 +26,13 @@
     margin-right: torem(12);
   }
 
+  &__title {
+    font-weight: 400;
+    font-size: torem(16);
+    line-height: lh(24, 16);
+    color: var(--clr-black);
+  }
+
   &__input:checked~&__state &__control {
     border: 2px solid var(--clr-radio-color);
   }
@@ -44,6 +51,10 @@
 
   &__input:focus~&__state &__title {
     text-decoration: underline;
+  }
+
+  &__input:disabled~&__state &__title {
+    color: var(--clr-gray-2);
   }
 
   &__input:disabled~&__state &__control {
