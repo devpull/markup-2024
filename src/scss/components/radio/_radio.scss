@@ -21,9 +21,13 @@
     width: torem(28);
     height: torem(28);
     background-color: var(--clr-white);
-    border: 2px solid var(--clr-radio-color);
+    border: 1px solid var(--clr-gray-2);
     border-radius: 50%;
     margin-right: torem(12);
+  }
+
+  &__input:checked~&__state &__control {
+    border: 2px solid var(--clr-radio-color);
   }
 
   &__input:checked~&__state &__control::after {
