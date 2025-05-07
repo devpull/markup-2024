@@ -5,12 +5,14 @@
   --clr-summary-border: var(--clr-gray-3);
   --clr-summary-arrow: var(--clr-gray-4);
   --size-summary-border-radius: #{$size-border-radius};
+  --clr-accordeon-text: var(--clr-black);
 
   &__details {
     background-color: var(--clr-summary-back);
     border: 1px solid var(--clr-summary-border);
     border-radius: var(--size-summary-border-radius, 8px);
     padding: 0 torem(32);
+    color: var(--clr-accordeon-text);
 
     &[open] {
       padding-bottom: torem(24);
@@ -33,6 +35,7 @@
     user-select: none;
     list-style: none;
     cursor: pointer;
+    color: var(--clr-accordeon-text);
 
     &::marker,
     &::-webkit-details-marker {
