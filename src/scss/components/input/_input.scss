@@ -12,6 +12,7 @@
     line-height: lh(18, 12);
     text-transform: uppercase;
     margin-bottom: torem(5);
+    color: var(--clr-gray-3);
   }
 
   &__input::placeholder {
