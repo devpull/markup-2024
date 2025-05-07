@@ -44,4 +44,9 @@
     }
   }
   
+  &--buttons-row-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: torem(10);
+  }
 }
