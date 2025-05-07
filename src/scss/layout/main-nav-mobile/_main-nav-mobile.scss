@@ -4,8 +4,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-
+  transform: translateX(-100%);
   background-color: #F9FAFC;
+  transition: transform 250ms ease-in-out;
+
+  &[data-open] {
+    transform: translateX(0);
+  }
 
   &__top {
     display: flex;

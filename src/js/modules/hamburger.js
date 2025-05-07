@@ -9,12 +9,12 @@
   }
 
   hamburger.addEventListener("click", (e) => {
-    menuMobile.style.display = "block";
     document.body.classList.add(classNavOpen);
+    menuMobile.setAttribute('data-open', '');
   });
 
   menuMobileClose.addEventListener("click", (e) => {
-    menuMobile.style.display = "none";
     document.body.classList.remove(classNavOpen);
+    menuMobile.removeAttribute('data-open');
   });
 })();
