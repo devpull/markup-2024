@@ -20,6 +20,7 @@
     gap: 1px;
     align-items: flex-end;
     height: torem(60);
+    animation: chartGrow 600ms ease-out;
   }
 
   &__title {
@@ -49,5 +50,17 @@
   &__bar {
     flex: 1;
     background-color: var(--clr-primary-1);
+  }
+
+  @keyframes chartGrow {
+    from {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+
+    to {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
   }
 }
