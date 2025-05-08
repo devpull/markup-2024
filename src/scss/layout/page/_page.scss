@@ -4,23 +4,27 @@
   background-color: var(--clr-main-back);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
   min-height: 100vh;
-}
+  grid-template-columns: 100%;
 
-.l-page {
   &__single {
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-template-rows: 100%;
+    
     gap: torem(56);
 
-    @include mediaDown("md") {
+    @include mediaDown("lg") {
       display: block;
     }
   }
 
   &__component-wrapper {
     background-color: var(--clr-white);
+    // fix content jumping
+    // https://stackoverflow.com/questions/70961650/content-overflowing-from-css-grid
+    min-height: 0;
+    min-width: 0;
   }
 
   &__component-wrapper>.c-calendar {
