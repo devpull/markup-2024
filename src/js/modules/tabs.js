@@ -9,6 +9,10 @@
   const cardsMolecules = document.querySelectorAll('.l-preview [data-type="molecule"]');
   const cardsOrganisms = document.querySelectorAll('.l-preview [data-type="organism"]');
 
+  if(!ToggleTabAll) {
+    return;
+  }
+
   ToggleTabAll.addEventListener('click', () => {
     _showAll();
   })
