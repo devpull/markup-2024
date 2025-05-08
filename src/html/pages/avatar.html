@@ -2,8 +2,8 @@
 title: Аватар
 layout: page
 ---
-<div class="l-page__component-title">
-  <h1>Аватар</h1>
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Аватар</h1>
 </div>
 <div class="l-page__component-show">
   {{>avatar}}
@@ -27,8 +27,23 @@ layout: page
 &lt;/picture&gt;
 </pre></code>
     </div>
-    <div class="c-toggler__css">
-
-    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-avatar {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+}
+.c-avatar__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+</code></pre>
+</div>
   </div>
 </div>
