@@ -2,18 +2,13 @@
 
 .l-page {
   background-color: var(--clr-main-back);
-  // display: flex;
-  // flex-direction: column;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
   min-height: 100vh;
 }
 
 .l-page {
-  &__main {
-    // flex-grow: 1;
-  }
-
   &__single {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -21,13 +16,11 @@
 
     @include mediaDown("md") {
       display: block;
-      // grid-template-rows: initial;
     }
   }
 
   &__component-wrapper {
     background-color: var(--clr-white);
-    padding: torem(32) torem(48);
   }
 
   &__component-wrapper>.c-calendar {
@@ -38,10 +31,32 @@
     }
   }
 
-  &__component-wrapper:has(> .c-calendar),
-  &__component-wrapper:has(> .c-tooltip),
-  &__component-wrapper:has(> .c-avatar) {
+  &__component-title {
+    padding: torem(32) torem(38) torem(58) torem(38);
+
+    @include mediaDown("sm") {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  &__component-show {
+    padding: torem(32) torem(48);
+  }
+
+  &__component-show:has(> .c-calendar),
+  &__component-show:has(> .c-tooltip),
+  &__component-show:has(> .c-avatar) {
     display: flex;
     justify-content: center;
+  }
+
+  @include mediaDown("md") {
+    --layout-padding: 1rem;
+
+    &__single.l-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
   }
 }
