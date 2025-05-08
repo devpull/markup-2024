@@ -12,7 +12,7 @@
     margin-bottom: torem(16);
   }
 
-  @include mediaDown("md") {
+  @include mediaDown("lg") {
     display: none;
   }
 }
