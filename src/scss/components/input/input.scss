@@ -33,6 +33,7 @@
     padding: torem(17) 0 torem(13) torem(24);
     border: 1px solid var(--clr-input-border);
     border-radius: 8px;
+    transition: border 100ms ease-in-out;
   }
 
   &__input-wrapper:has(>.c-input__input:disabled) {

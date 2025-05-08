@@ -19,6 +19,7 @@
   &__state {
     display: flex;
     align-items: center;
+    margin: torem(16) torem(21);
   }
 
   &__title {
@@ -39,8 +40,20 @@
     margin-right: torem(12);
   }
 
+  @keyframes checkAndOut {
+    from {
+      outline: torem(0) solid rgba(0,0,0,.3);
+    }
+
+    to {
+      outline: torem(30) solid rgba(0,0,0,0);
+    }
+  }
+
   &__input:checked~&__state &__control {
     background-color: var(--clr-primary-1);
+    animation-name: checkAndOut;
+    animation-duration: 300ms;
   }
 
   &__input:checked~&__state &__control &__icon {
