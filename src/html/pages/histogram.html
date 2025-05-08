@@ -2,5 +2,122 @@
 title: Гистограмма
 layout: page
 ---
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Аватар</h1>
+</div>
+<div class="l-page__component-show">
+  {{>histogram}}
+</div>
 
-{{>histogram}}
+<div class="l-page__component-toggler">
+  <div class="c-toggler">
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-html" checked />
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-css" />
+  
+    <div class="c-toggler__scroller">
+      <label class="c-toggler__item" for="#toggle-html">HTML</label>
+      <label class="c-toggler__item" for="#toggle-css">CSS</label>
+    </div>
+
+    <div class="c-toggler__html">
+<pre><code data-language="html">
+&lt;div class=&quot;c-histogram&quot;&gt;
+  &lt;div class=&quot;c-histogram__top&quot;&gt;
+    &lt;div class=&quot;c-histogram__orders&quot;&gt;
+      &lt;h4 class=&quot;c-histogram__title&quot;&gt;Всего заказов&lt;/h4&gt;
+      &lt;span class=&quot;c-histogram__orders&quot;&gt;50254&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-histogram__view&quot;&gt;
+      &lt;button class=&quot;c-histogram__all-href&quot;&gt;Все&lt;/&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;c-histogram__bottom&quot;&gt;
+    &lt;div class=&quot;c-histogram__chart&quot;&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 98&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 78&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 48&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 38&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 78&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 18&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 78&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 38&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 68&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 78&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 33&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 46&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 67&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 46&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 56&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 18&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 28&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 38&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 48&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 44&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 55&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 44&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 33&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 22&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 11&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 14&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 26&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 45&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 67&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 78&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 88&#37;;&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;c-histogram__bar&quot; style=&quot;height: 98&#37;;&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre></code>
+    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-histogram {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 1.5rem;
+  min-height: 11.5625rem;
+  width: 100%;
+  border: 1px solid var(--clr-gray-3);
+  border-radius: 8px;
+}
+.c-histogram__top {
+  display: flex;
+  justify-content: space-between;
+}
+.c-histogram__chart {
+  display: flex;
+  gap: 1px;
+  align-items: flex-end;
+  height: 3.75rem;
+}
+.c-histogram__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.375rem;
+  color: var(--clr-black);
+}
+.c-histogram__orders {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: var(--clr-black);
+}
+.c-histogram__all-href {
+  all: unset;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--clr-primary-1);
+}
+.c-histogram__bar {
+  flex: 1;
+  background-color: var(--clr-primary-1);
+}
+</code></pre>
+</div>
+  </div>
+</div>
