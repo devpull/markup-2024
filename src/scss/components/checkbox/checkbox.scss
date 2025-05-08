@@ -52,8 +52,10 @@
 
   &__input:checked~&__state &__control {
     background-color: var(--clr-primary-1);
-    animation-name: checkAndOut;
-    animation-duration: 300ms;
+  }
+
+  &__input:focus:checked~&__state &__control {
+    animation: checkAndOut 300ms ease-out;
   }
 
   &__input:checked~&__state &__control &__icon {
