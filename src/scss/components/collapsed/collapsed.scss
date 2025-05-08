@@ -76,6 +76,8 @@
       mask: url(../img/svg/icons/arrow-down.svg) no-repeat 50% 50%;
       mask-size: cover;
       background-color: var(--clr-summary-arrow);
+      transition: transform 200ms ease-in;
+      transform-origin: center;
     }
   }
 
