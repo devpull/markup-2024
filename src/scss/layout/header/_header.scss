@@ -4,15 +4,19 @@
   --clr-header-back: var(--clr-white);
 
   background-color: var(--clr-header-back);
-  min-height: 200px;
   padding: 2rem 0 0 0;
-  margin-bottom: torem(30);
+
+  @include mediaDown("sm") {
+    min-height: initial;
+    padding: 1rem 0 0 0;
+    margin-bottom: 0;
+  }
 
   &__top {
     margin-bottom: torem(38);
 
     @include mediaDown("md") {
-      margin-bottom: torem(48);
+      margin-bottom: 1rem;
     }
 
     @include mediaDown("lg") {
@@ -33,9 +37,18 @@
       font-size: torem(28);
       line-height: lh(38, 28);
     }
+    @include mediaDown("md") {
+      margin-bottom: torem(32);
+    }
   }
 
-  &~.c-tabs {
-    margin-top: torem(-30);
+  @include mediaDown("md") {
+    .l-header~.c-tabs {
+      margin-top: torem(-30);
+    }
+  }
+
+  &--transparent-back {
+    background-color: transparent;
   }
 }
