@@ -17,9 +17,13 @@
   text-align: center;
   border-radius: var(--size-btn-border-radius);
   user-select: none;
-  transition: #{$btn-transition};
+  transition: #{$btn-transition}, margin-bottom 70ms ease-in-out;
   cursor: pointer;
 
+  &:active {
+    margin-bottom: torem(-1);
+  }
+  
   &:disabled {
     opacity: .65;
     pointer-events: none;
