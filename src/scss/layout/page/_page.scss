@@ -32,6 +32,13 @@
   }
 
   &__component-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: torem(28);
+    line-height: lh(38, 28);
+  }
+
+  &__component-title-wrapper {
     padding: torem(32) torem(38) torem(58) torem(38);
 
     @include mediaDown("sm") {
@@ -41,7 +48,7 @@
   }
 
   &__component-show {
-    padding: torem(32) torem(48);
+    padding: 0 torem(48) torem(32) torem(48);
   }
 
   &__component-show:has(> .c-calendar),
