@@ -84,6 +84,13 @@ function js() {
     .pipe(browserSync.stream());
 }
 
+function includeJs() {
+  return src("./src/js/include/*.js")
+    .pipe(plumber())
+    .pipe(changed(buildJsPath))
+    .pipe(dest(buildJsPath))
+}
+
 function img() {
   return src("./src/img/**/*.{jpg,jpeg,png,gif}", { encoding: false })
     .pipe(plumber())
@@ -193,6 +200,7 @@ exports.devFonts = fonts;
 exports.devCss = css;
 exports.devHtml = html;
 exports.devJs = js;
+exports.devIncludeJs = includeJs;
 exports.devImg = img;
 exports.devSvg = svg;
 exports.devWatcher = watcher;

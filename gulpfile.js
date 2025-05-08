@@ -7,6 +7,7 @@ const {
   devCss,
   devHtml,
   devJs,
+  devIncludeJs,
   devImg,
   devSvg,
   devServe,
@@ -45,7 +46,7 @@ exports.devClean = devClean;
 exports.default = series(
   devSetEnv,
   devSvg,
-  parallel(devFonts, devCss, devHtml, devJs, devImg),
+  parallel(devFonts, devCss, devHtml, devJs, devIncludeJs, devImg),
   parallel(devServe, devWatcher)
 );
 
