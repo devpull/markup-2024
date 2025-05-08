@@ -1,6 +1,7 @@
 @use '../../abstracts/' as *;
 
 .c-avatar {
+  display: inline-block;
   border-radius: 50%;
   overflow: hidden;
   width: torem(160);
