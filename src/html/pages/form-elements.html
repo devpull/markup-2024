@@ -1,0 +1,49 @@
+---
+title: Элементы форм
+layout: page
+---
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Элементы форм</h1>
+</div>
+<div class="l-page__component-show">
+  {{>inputs}}
+</div>
+
+<div class="l-page__component-toggler">
+  <div class="c-toggler">
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-html" checked />
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-css" />
+  
+    <div class="c-toggler__scroller">
+      <label class="c-toggler__item" for="#toggle-html">HTML</label>
+      <label class="c-toggler__item" for="#toggle-css">CSS</label>
+    </div>
+
+    <div class="c-toggler__html">
+<pre><code data-language="html">
+&lt;picture class=&quot;c-avatar&quot;&gt;
+  &lt;source media=&quot;(min-width: 900px)&quot; srcset=&quot;{{root}}img/cog@2x.png 2x&quot; /&gt;
+  &lt;img class=&quot;c-avatar__image&quot; height=&quot;160&quot; width=&quot;160&quot; src=&quot;{{root}}img/cog-raw.png&quot; alt=&quot;Аватар пользователя&quot;&gt;
+&lt;/picture&gt;
+</pre></code>
+    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-avatar {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+}
+.c-avatar__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+</code></pre>
+</div>
+  </div>
+</div>
