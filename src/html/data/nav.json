@@ -4,24 +4,36 @@
     "title": "Гистограмма"
   },
   {
-    "id": "modal",
-    "title": "Модальное окно"
+    "id": "calendar",
+    "title": "Календарь"
   },
   {
     "id": "tooltip",
     "title": "Подсказка"
   },
   {
-    "id": "calendar",
-    "title": "Календарь"
-  },
-  {
-    "id": "custom-form-elements",
-    "title": "Элементы форм"
-  },
-  {
     "id": "avatar",
     "title": "Аватар"
+  },
+  {
+    "id": "modal",
+    "title": "Модальное окно"
+  },
+  {
+    "id": "skeleton",
+    "title": "Заглушка"
+  },
+  {
+    "id": "accordeon",
+    "title": "Аккордеон"
+  },
+  {
+    "id": "button",
+    "title": "Кнопка"
+  },
+  {
+    "id": "form-elements",
+    "title": "Элементы форм"
   },
   {
     "id": "index",
