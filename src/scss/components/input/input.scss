@@ -4,7 +4,7 @@
   --clr-input-border: var(--clr-gray-2);
   --clr-input-placeholder: var(--clr-gray-2);
   --clr-input-invalid: #F03D3E;
-  --clr-icon-valid: #374FC7;
+  --clr-input-icon-valid: #374FC7;
 
   &__title {
     font-weight: 500;
@@ -59,7 +59,7 @@
     opacity: 0;
 
     &--valid {
-      stroke: var(--clr-icon-valid);
+      stroke: var(--clr-input-icon-valid);
     }
     &--invalid {
       stroke: var(--clr-input-invalid);

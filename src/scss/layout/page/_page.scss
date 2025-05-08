@@ -52,11 +52,15 @@
   }
 
   &__component-show {
-    padding: 0 torem(48) torem(32) torem(48);
+    padding: 0 torem(38) torem(32) torem(38);
+
+    .c-calendar {
+      margin: 0 auto;
+    }
   }
 
-  &__component-show:has(> .c-calendar),
   &__component-show:has(> .c-tooltip),
+  &__component-show:has(> .c-btn),
   &__component-show:has(> .c-avatar) {
     display: flex;
     justify-content: center;

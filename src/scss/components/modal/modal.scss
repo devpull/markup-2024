@@ -1,22 +1,26 @@
 @use "../../abstracts/" as *;
 
 .c-modal {
+  --clr-modal-backdrop: rgba(196,196,196,.5);
+  --clr-modal-window-back: var(--clr-white);
+  --clr-modal-window-border: var(--clr-gray-3);
+
   display: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(196,196,196,.5);
+  background-color: var(--clr-modal-backdrop);
   z-index: 1;
 
   &__window {
     position: absolute;
     padding: torem(30) torem(40);
     max-width: torem(458);
-    background-color: #fff;
+    background-color: var(--clr-modal-window-back);
     border-radius: 8px;
-    border: 1px solid var(--clr-gray-3);
+    border: 1px solid var(--clr-modal-window-border);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
