@@ -15,4 +15,7 @@ html[data-mode="dark"] {
   --clr-btn-text-dark: var(--clr-font);
   // footer
   --clr-footer-back: var(--clr-black);
+  // modal
+  --clr-modal-window-back: var(--clr-black);
+  --clr-modal-window-border: var(--clr-gray-3);
 }

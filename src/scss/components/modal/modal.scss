@@ -2,9 +2,7 @@
 
 .c-modal {
   --clr-modal-backdrop: rgba(196,196,196,.5);
-  --clr-modal-window-back: var(--clr-white);
-  --clr-modal-window-border: var(--clr-gray-3);
-
+  
   display: none;
   position: fixed;
   width: 100vw;
