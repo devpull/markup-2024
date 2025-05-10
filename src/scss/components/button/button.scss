@@ -6,7 +6,6 @@
   --size-btn-border: #{$btn-size-border};
   --size-btn-border-radius: #{$btn-size-border-radius};
   --clr-btn-text-light: var(--clr-white);
-  --clr-btn-text-dark: var(--clr-gray-4);
 
   all: unset;
   display: inline-block;
@@ -83,7 +82,7 @@
     --clr-btn-alt-back: transparent;
     --clr-btn-alt-border: var(--clr-gray-3);
     --size-btn-alt-border: var(--size-btn-border);
-    --clr-btn-alt-hover-border: var(--clr-black);
+    --clr-btn-alt-hover-border: var(--clr-font);
     --clr-btn-alt-active-border: var(--clr-gray-3);
 
     background-color: var(--clr-btn-alt-back);

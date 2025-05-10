@@ -41,6 +41,7 @@
   &-help {
     height: torem(24);
     width: torem(24);
+    color: var(--clr-font);
   }
 
   &:hover > &-hint {
