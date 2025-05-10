@@ -60,10 +60,10 @@
     opacity: 0;
 
     &--valid {
-      stroke: var(--clr-input-icon-valid);
+      color: var(--clr-input-icon-valid);
     }
     &--invalid {
-      stroke: var(--clr-input-invalid);
+      color: var(--clr-input-invalid);
     }
   }
 
