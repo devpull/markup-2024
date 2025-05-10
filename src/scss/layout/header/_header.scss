@@ -14,6 +14,14 @@
 
   &__top {
     margin-bottom: torem(38);
+    display: flex;
+    justify-content: space-between;
+
+    .l-header__slot-mode-switch {
+      @include mediaDown('sm') {
+        display: none;
+      }
+    }
 
     @include mediaDown("md") {
       margin-bottom: 1rem;
@@ -25,8 +33,11 @@
     }
   }
 
+
   &__logo {
-    margin: 0 auto;
+    @include mediaDown('sm') {
+      margin: 0 auto;
+    }
   }
 
   &__heading {

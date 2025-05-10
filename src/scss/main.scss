@@ -4,6 +4,6 @@
 @use "themes";
 @use "base";
 // load using gulp glob
-@use "components/**/*.scss";
 @use "layout/**/*.scss";
+@use "components/**/*.scss";
 @use "vendors/**/*.scss";

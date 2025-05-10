@@ -1,6 +1,8 @@
 @use "../abstracts/" as *;
 
 .icon {
+  color: var(--clr-black);
+
   &--help-in-circle {
     width: torem(24);
     height: torem(24);
@@ -31,6 +33,14 @@
     fill: none;
   }
   &--alert-triangle {
+    width: torem(24);
+    height: torem(24);
+  }
+  &--sun {
+    width: torem(24);
+    height: torem(24);
+  }
+  &--moon {
     width: torem(24);
     height: torem(24);
   }

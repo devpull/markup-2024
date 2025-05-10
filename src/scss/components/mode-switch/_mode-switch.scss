@@ -1,8 +1,28 @@
 @use "../../abstracts/" as *;
 
 .c-mode-switch {
-  padding: torem(25) 0;
-  border-top: 1px solid var(--clr-gray-2);
-  border-bottom: 1px solid var(--clr-gray-2);
-  margin-bottom: torem(24);
+
+  display: flex;
+  align-items: center;
+  &__icon-light, &__icon-dark {
+    color: var(--clr-gray-3);
+
+    &--active {
+      color: var(--clr-black);
+    }
+  }
+
+
+  .c-switch__control {
+    margin: 0 torem(12);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    padding: torem(25) 0;
+    border-top: 1px solid var(--clr-gray-2);
+    border-bottom: 1px solid var(--clr-gray-2);
+    margin-bottom: torem(24);
+  }
 }
