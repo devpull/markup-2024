@@ -1,8 +1,6 @@
 @use "../../abstracts/" as *;
 
 .l-footer {
-  --clr-footer-back: var(--clr-white);
-
   background-color: var(--clr-footer-back);
   padding: torem(70) 0;
   text-align: center;
