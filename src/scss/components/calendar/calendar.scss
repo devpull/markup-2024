@@ -8,10 +8,8 @@
   border-radius: 8px;
   padding: torem(28) torem(30) torem(40);
 
-  color: #334d6e;
-
   &__title {
-    color: #334D6E;
+    color: var(--clr-calendar-title);
     padding-bottom: torem(24);
 
     font-weight: 600;
@@ -21,7 +19,7 @@
   }
 
   &__item-day {
-    color: #90A0B7;
+    color: var(--clr-calendar-day);
   }
 
   &__wrapper {
@@ -45,9 +43,11 @@
     font-size: torem(16);
     line-height: lh(20, 16);
     font-weight: 400;
+    color: var(--clr-calendar-day-item);
 
     &-between--active {
       background-color: #A0B1F5;
+      color: var(--clr-calendar-between);
     }
 
     @include mediaDown("sm") {

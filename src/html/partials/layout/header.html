@@ -3,7 +3,11 @@
     <div class="l-header__top">
       {{>hamburger}}
       <div class="l-header__logo">
-        <a href="/"><img src="{{root}}img/svg/logo.svg" alt="Лого"></a>
+        <a href="/">
+          <svg class="icon icon--logo" fill="currentColor">
+            <use xlink:href="{{root}}img/svg/sprite.svg#logo"></use>
+          </svg>
+        </a>
       </div>
       <div class="l-header__slot-mode-switch">
         {{>mode-switch}}

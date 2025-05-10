@@ -29,14 +29,14 @@
     font-size: torem(16);
     line-height: lh(24, 16);
     margin-bottom: torem(6);
-    color: var(--clr-black);
+    color: var(--clr-font);
   }
 
   &__orders {
     font-weight: 400;
     font-size: torem(20);
     line-height: lh(24, 20);
-    color: var(--clr-black);
+    color: var(--clr-font);
   }
 
   &__all-href {

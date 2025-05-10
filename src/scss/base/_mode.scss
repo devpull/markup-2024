@@ -1,0 +1,14 @@
+html[data-mode="dark"] {
+  --clr-font: var(--clr-white);
+  --clr-main-back: var(--clr-gray-4);
+  --clr-main-back-light: var(--clr-black);
+  // card
+  --clr-card-shadow: rgba(255, 255, 255, 0.265);
+  --clr-card-back: var(--clr-black);
+  // inputs
+  --clr-input-back: var(--clr-black);
+  // calendar
+  --clr-calendar-title: var(--clr-font);
+  --clr-calendar-day: var(--clr-font);
+  --clr-calendar-day-item: var(--clr-gray-3);
+}

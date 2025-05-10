@@ -2,6 +2,7 @@
 
   const modeSwitch = document.getElementById('mode-switch');
   const modeSwitchMobile = document.getElementById('mode-switch-mobile');
+  const html = document.querySelector('html');
 
   if(!modeSwitch || !modeSwitchMobile) {
     return;
@@ -13,9 +14,9 @@
 
   function toggleMode(e) {
     if(e.target.checked) {
-      document.body.setAttribute('data-mode', 'dark');
+      html.setAttribute('data-mode', 'dark');
     } else {
-      document.body.removeAttribute('data-mode');
+      html.removeAttribute('data-mode');
     }
   }
 })();

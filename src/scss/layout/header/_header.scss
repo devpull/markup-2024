@@ -1,7 +1,7 @@
 @use "../../abstracts" as *;
 
 .l-header {
-  --clr-header-back: var(--clr-white);
+  --clr-header-back: var(--clr-main-back-light);
 
   background-color: var(--clr-header-back);
   padding: 2rem 0 0 0;

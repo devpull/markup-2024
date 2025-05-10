@@ -1,9 +1,6 @@
 @use "../../abstracts/" as *;
 
 .c-card {
-  --clr-card-shadow: rgba(33, 36, 41, .065);
-  --clr-card-back: var(--clr-white);
-
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -54,7 +51,7 @@
     font-weight: 500;
     font-size: torem(21);
     line-height: lh(25, 16);
-    color: var(--clr-black);
+    color: var(--clr-font);
 
     p {
       margin: 0;

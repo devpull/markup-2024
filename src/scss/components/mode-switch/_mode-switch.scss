@@ -6,7 +6,7 @@
   align-items: center;
 
   &__icon-light {
-    color: var(--clr-black);
+    color: var(--clr-font);
   }
 
   &__icon-dark {
@@ -18,7 +18,7 @@
   }
 
   .c-switch__input:checked~&__icon-dark {
-    color: var(--clr-black);
+    color: var(--clr-font);
   }
 
   .c-switch__control {

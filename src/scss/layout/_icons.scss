@@ -1,8 +1,12 @@
 @use "../abstracts/" as *;
 
 .icon {
-  color: var(--clr-black);
+  color: var(--clr-font);
 
+  &--logo {
+    width: torem(110);
+    height: torem(32);
+  }
   &--help-in-circle {
     width: torem(24);
     height: torem(24);

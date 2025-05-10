@@ -1,11 +1,16 @@
 @use "../../abstracts/" as *;
 
 .c-tabs {
+  --clr-tabs-border-bottom: var(--clr-gray-2);
+  --clr-tabs-active: var(--clr-black);
+  --clr-tabs-inactive: var(--clr-gray-3);
+  --clr-tabs-under: var(--clr-black);
+  
   overflow: auto;
   margin-bottom: torem(30);
   scrollbar-width: none;
-  background-color: var(--clr-white);
-  border-bottom: 1px solid var(--clr-gray-2);
+  background-color: var(--clr-main-back-light);
+  border-bottom: 1px solid var(--clr-tabs-border-bottom);
 
   &__input {
     position: absolute;
@@ -27,7 +32,7 @@
     &[id="#tab-atoms"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-atoms"],
     &[id="#tab-molecules"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-molecules"],
     &[id="#tab-organisms"]:checked~.c-tabs__scroller .c-tabs__item[for="#tab-organisms"] {
-      color: var(--clr-black);
+      color: var(--clr-font);
     }
   }
 
@@ -51,7 +56,7 @@
 
     font-size: torem(16);
     line-height: lh(24, 16);
-    color: var(--clr-gray-3);
+    color: var(--clr-tabs-inactive);
     transition: color 250ms ease-in-out;
 
     &::after {
@@ -60,7 +65,7 @@
       display: block;
       height: torem(6);
       transform: scaleX(0);
-      background-color: var(--clr-black);
+      background-color: var(--clr-font);
       transition: all 250ms ease-in-out;
     }
   }
