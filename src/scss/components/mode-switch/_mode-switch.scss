@@ -4,14 +4,22 @@
 
   display: flex;
   align-items: center;
-  &__icon-light, &__icon-dark {
-    color: var(--clr-gray-3);
 
-    &--active {
-      color: var(--clr-black);
-    }
+  &__icon-light {
+    color: var(--clr-black);
   }
 
+  &__icon-dark {
+    color: var(--clr-gray-3);
+  }
+
+  .c-switch__input:checked~&__icon-light {
+    color: var(--clr-gray-3);
+  }
+
+  .c-switch__input:checked~&__icon-dark {
+    color: var(--clr-black);
+  }
 
   .c-switch__control {
     margin: 0 torem(12);
