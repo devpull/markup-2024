@@ -2,7 +2,7 @@
 @use "sass:list";
 @use "sass:math";
 @use "sass:meta";
-
+// https://feldsdev.medium.com/creating-a-palette-generator-in-sass-5451c6d56a1f
 // Create a list of numbers
 @function range($from, $to, $step: 1) {
 

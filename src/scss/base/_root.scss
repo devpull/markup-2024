@@ -19,6 +19,7 @@ body {
 :root {
   --layout-padding: 30px;
   --layout-width: 1110px;
+
   // Colors
   --percent-darken-by: #{$percent-darken-by};
   // Primary
@@ -29,6 +30,10 @@ body {
   --clr-primary-2-dark10: hsl(from var(--clr-primary-2) h s calc(l - var(--percent-darken-by)));
   --clr-primary-2-dark20: hsl(from var(--clr-primary-2) h s calc(l - var(--percent-darken-by)*2));
   --clr-primary-3: #{$clr-primary-3};
+
+  // Grays auto generated
+  @include as-props("clr-gray", (#F8F9FA, #212429));
+
   // Black and grays
   --clr-black: #212429;
   --clr-gray-1: #F8F9FA;
@@ -43,15 +48,15 @@ body {
   --clr-main-back-light: var(--clr-white);
   --clr-main-back-gray: var(--clr-gray-4);
   // card
-  --clr-card-back: var(--clr-white);
+  --clr-card-back: var(--clr-main-back-light);
   --clr-card-shadow: rgba(33, 36, 41, .065);
   // inputs
   --clr-input-back: var(--clr-white);
   // calendar
-  --clr-calendar-title: #334D6E;
-  --clr-calendar-day: #90A0B7;
-  --clr-calendar-day-item: #334d6e;
-  --clr-calendar-between: var(--clr-font);
+  --clr-sym-calendar-title: #334D6E;
+  --clr-sym-calendar-day: #90A0B7;
+  --clr-sym-calendar-day-item: #334d6e;
+  --clr-sym-calendar-between: var(--clr-font);
   // button
   --clr-btn-text-dark: var(--clr-gray-4);
   // footer

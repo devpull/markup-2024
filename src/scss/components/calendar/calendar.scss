@@ -1,6 +1,11 @@
 @use "../../abstracts/" as *;
 
 .c-calendar {
+  --clr-calendar-title: var(--clr-sym-calendar-title);
+  --clr-calendar-day: var(--clr-sym-calendar-day);
+  --clr-calendar-day-item: var(--clr-sym-calendar-day-item);
+  --clr-calendar-between: var(--clr-font);
+
   // width: 80%;
   // min-width: 250px;
   max-width: 300px;
