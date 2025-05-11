@@ -23,4 +23,8 @@ html[data-mode="dark"] {
   --clr-skeleton-runner-back: 128, 128, 128;
   // accordeon
   --clr-summary-arrow: var(--clr-white);
+  // checkbox
+  --clr-checkbox-animation: 255, 255, 255;
+  // input text
+  --clr-input-back-disabled: var(--clr-gray-4);
 }

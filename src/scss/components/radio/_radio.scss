@@ -1,7 +1,12 @@
 @use "../../abstracts/" as *;
 
 .c-radio {
+  --clr-radio-unchecked-border: var(--clr-gray-2);
   --clr-radio-color: var(--clr-primary-1);
+  --clr-radio-title: var(--clr-gray-2);
+  --clr-radio-disabled-back: var(--clr-gray-2);
+  --clr-radio-disabled-border: var(--clr-gray-2);
+
   display: inline-flex;
   cursor: pointer;
 
@@ -21,8 +26,7 @@
     position: relative;
     width: torem(28);
     height: torem(28);
-    background-color: var(--clr-white);
-    border: 1px solid var(--clr-gray-2);
+    border: 1px solid var(--clr-radio-unchecked-border);
     border-radius: 50%;
     margin-right: torem(12);
   }
@@ -31,7 +35,7 @@
     font-weight: 400;
     font-size: torem(16);
     line-height: lh(24, 16);
-    color: var(--clr-black);
+    color: var(--clr-font);
   }
 
   &__input:checked~&__state &__control {
@@ -55,11 +59,11 @@
   }
 
   &__input:disabled~&__state &__title {
-    color: var(--clr-gray-2);
+    color: var(--clr-radio-title);
   }
 
   &__input:disabled~&__state &__control {
-    background-color: var(--clr-gray-2);
-    border: 2px solid var(--clr-gray-2);
+    background-color: var(--clr-radio-disabled-back);
+    border: 2px solid var(--clr-radio-disabled-border);
   }
 }
