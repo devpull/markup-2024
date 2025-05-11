@@ -1,8 +1,7 @@
 @use "../../abstracts/" as *;
 
 .c-skeleton {
-  --clr-skeleton-back: var(--clr-white);
-  --clr-skeleton-string: var(--clr-gray-2);
+  --clr-skeleton-back: transparent;
   --skeleton-border-radius: #{$size-border-radius};
   --clr-skeleton-border: var(--clr-gray-3);
   --clr-skeleton-gradient-shine: #f3f5f5;
@@ -20,10 +19,10 @@
     right: 0;
     transform: translateX(-100%);
     background-image: linear-gradient(90deg,
-        rgba(#fff, 0) 0,
-        rgba(#fff, 0.2) 20%,
-        rgba(#fff, 0.5) 60%,
-        rgba(#fff, 0));
+        rgba(var(--clr-skeleton-runner-back), 0) 0,
+        rgba(var(--clr-skeleton-runner-back), 0.2) 20%,
+        rgba(var(--clr-skeleton-runner-back), 0.5) 60%,
+        rgba(var(--clr-skeleton-runner-back), 0));
     animation: shimmer 1.6s infinite;
     content: '';
   }
