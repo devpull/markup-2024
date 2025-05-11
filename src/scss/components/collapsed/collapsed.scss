@@ -5,6 +5,7 @@
   --clr-summary-border: var(--clr-gray-3);
   --size-summary-border-radius: #{$size-border-radius};
   --clr-accordeon-text: var(--clr-font);
+  --clr-summary-arrow: var(--clr-sym-summary-arrow);
 
   &__details {
     background-color: var(--clr-summary-back);
