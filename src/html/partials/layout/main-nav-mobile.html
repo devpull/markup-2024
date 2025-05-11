@@ -5,17 +5,19 @@
         id="main-nav-mobile-close"
         class="c-btn c-btn__with-icon c-btn__round c-btn--gray c-btn__size-32"
       >
-        <svg class="icon--close-cross">
+        <svg class="icon icon--close-cross">
           <use xlink:href="{{root}}img/svg/sprite.svg#close-cross" />
         </svg>
       </button>
       <div class="l-main-nav-mobile__logo">
-        <a href="/"><img src="{{root}}img/svg/logo.svg" alt="Лого" /></a>
+        <a href="/">
+          <svg class="icon icon--logo" fill="currentColor">
+            <use xlink:href="{{root}}img/svg/sprite.svg#logo"></use>
+          </svg>
+        </a>
       </div>
     </div>
-    <div class="c-mode-switch__container">
-      {{>mode-switch-mobile}}
-    </div>
+    <div class="c-mode-switch__container">{{>mode-switch-mobile}}</div>
     <nav class="l-components-nav">
       <h4 class="l-components-nav__title--mobile">Компоненты</h4>
       <ul>

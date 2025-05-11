@@ -2,7 +2,7 @@
 
 .c-toggler {
   margin-bottom: torem(30);
-  background-color: var(--clr-white);
+  background-color: var(--clr-main-back-light);
 
   &__input {
     position: absolute;
@@ -20,7 +20,7 @@
 
     &[id="#toggle-html"]:checked~.c-toggler__scroller .c-toggler__item[for="#toggle-all"],
     &[id="#toggle-css"]:checked~.c-toggler__scroller .c-toggler__item[for="#toggle-atoms"] {
-      color: var(--clr-black);
+      color: var(--clr-font);
     }
 
     &[id="#toggle-html"]:checked~.c-toggler__html,
@@ -61,7 +61,7 @@
       display: block;
       height: torem(6);
       transform: scaleX(0);
-      background-color: var(--clr-black);
+      background-color: var(--clr-font);
       transition: all 250ms ease-in-out;
     }
   }

@@ -25,6 +25,7 @@
     // https://stackoverflow.com/questions/70961650/content-overflowing-from-css-grid
     min-height: 0;
     min-width: 0;
+    border-radius: 12px;
   }
 
   &__component-wrapper>.c-calendar {
