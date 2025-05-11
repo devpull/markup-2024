@@ -39,6 +39,10 @@
     transition: border 100ms ease-in-out;
   }
 
+  &__input-wrapper:has(>.c-input__input+.icon) {
+    padding-right: torem(50);
+  }
+
   &__input-wrapper:has(>.c-input__input:disabled) {
     background-color: var(--clr-input-back-disabled);
     cursor:no-drop;
