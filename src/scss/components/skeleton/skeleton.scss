@@ -5,6 +5,8 @@
   --skeleton-border-radius: #{$size-border-radius};
   --clr-skeleton-border: var(--clr-gray-3);
   --clr-skeleton-gradient-shine: #f3f5f5;
+  --clr-skeleton-string: var(--clr-sym-skeleton-string);
+  --clr-skeleton-runner-back: var(--clr-sym-skeleton-runner-back);
 
   background-color: var(--clr-skeleton-back);
   border-radius: var(--skeleton-border-radius);
