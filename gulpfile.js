@@ -33,6 +33,7 @@ const {
   docsCss,
   docsHtml,
   docsJs,
+  docsIncludeJs,
   docsImg,
   docsServe,
   docsRevision,
@@ -64,7 +65,7 @@ exports.build = series(
 exports.docs = series(
   docsClean,
   docsSvg,
-  parallel(docsCss, docsHtml, docsJs, docsImg),
+  parallel(docsCss, docsHtml, docsJs, docsIncludeJs, docsImg),
   docsRevision,
   docsRevisionRewrite,
   parallel(docsServe)

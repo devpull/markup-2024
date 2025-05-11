@@ -74,6 +74,13 @@ function js() {
     .pipe(dest(buildJsPath));
 }
 
+function includeJs() {
+  return src("./src/js/include/*.js")
+    .pipe(plumber())
+    .pipe(changed(buildJsPath))
+    .pipe(dest(buildJsPath))
+}
+
 function img() {
   return src(["./src/img/**/*.{jpg,jpeg,png,gif}"], { encoding: false })
     .pipe(changed(buildImgPath))
@@ -81,7 +88,26 @@ function img() {
     .pipe(dest(buildImgPath))
     .pipe(src("./src/img/**/*", { encoding: false }))
     .pipe(changed(buildImgPath))
-    .pipe(imagemin({ verbose: true }))
+    .pipe(
+      imagemin(
+        [
+          imagemin.svgo({
+            // options for hand made svg sprite
+            plugins: [
+              {
+                cleanupIDs: false,
+                removeUselessDefs: false,
+                removeViewBox: false,
+              },
+              { removeHiddenElems: false, displayNone: false },
+            ],
+          }),
+        ],
+        {
+          verbose: true,
+        }
+      )
+    )
     .pipe(dest(buildImgPath));
 }
 
@@ -95,7 +121,9 @@ function serve() {
 
 function revisionHash() {
   return src(`${buildPath}**/*.{css,js}`)
-    .pipe(src(`${buildPath}**/*.{jpg,jpeg,gif,png,webp,svg}`, { encoding: false }))
+    .pipe(
+      src(`${buildPath}**/*.{jpg,jpeg,gif,png,webp,svg}`, { encoding: false })
+    )
     .pipe(rev())
     .pipe(
       revFormat({
@@ -165,6 +193,7 @@ exports.docsClean = clean;
 exports.docsCss = css;
 exports.docsHtml = html;
 exports.docsJs = js;
+exports.docsIncludeJs = includeJs;
 exports.docsImg = img;
 exports.docsSvg = svg;
 exports.docsServe = serve;
