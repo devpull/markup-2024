@@ -1,7 +1,8 @@
 <section>
-  <header><h4>Инпуты</h4></header>
-  {{>checkboxes}}
-  {{>radios}}
-  {{>switches}}
+  <div class="l-page__horizontal-block">
+    <div class="l-page__vertical-block">{{>checkboxes}}</div>
+    <div class="l-page__vertical-block">{{>radios}}</div>
+    <div class="l-page__vertical-block">{{>switches}}</div>
+  </div>
   {{>inputs-text}}
 </section>

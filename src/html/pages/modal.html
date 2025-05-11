@@ -1,9 +1,9 @@
 ---
-title: Аватар
+title: Модальное окно
 layout: page
 ---
 <div class="l-page__component-title-wrapper">
-  <h1 class="l-page__component-title">Аватар</h1>
+  <h1 class="l-page__component-title">Модальное окно</h1>
 </div>
 <div class="l-page__component-show">
   {{>modal}}
@@ -21,27 +21,55 @@ layout: page
 
     <div class="c-toggler__html">
 <pre><code data-language="html">
-&lt;picture class=&quot;c-avatar&quot;&gt;
-  &lt;source media=&quot;(min-width: 900px)&quot; srcset=&quot;{{root}}img/cog@2x.png 2x&quot; /&gt;
-  &lt;img class=&quot;c-avatar__image&quot; height=&quot;160&quot; width=&quot;160&quot; src=&quot;{{root}}img/cog-raw.png&quot; alt=&quot;Аватар пользователя&quot;&gt;
-&lt;/picture&gt;
+&lt;button id=&quot;modal-open&quot; class=&quot;c-btn c-btn--primary&quot;&gt;
+  Открыть модальное окно
+&lt;/button&gt;
+&lt;div id=&quot;modal&quot; class=&quot;c-modal&quot;&gt;
+  &lt;div class=&quot;c-modal__back&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;c-modal__window&quot;&gt;
+    &lt;div id=&quot;modal-close&quot; class=&quot;c-modal__close&quot;&gt;
+      &lt;svg class=&quot;icon icon--close-cross&quot; fill=&quot;currentColor&quot;&gt;
+        &lt;use xlink:href=&quot;{{root}}img/svg/sprite.svg#close-cross&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-modal__body&quot;&gt;
+      Тут содержимое.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre></code>
     </div>
 <div class="c-toggler__css">
 <pre><code data-language="css">
-.c-avatar {
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 10rem;
-  height: 10rem;
+.c-modal {
+  --clr-modal-backdrop: rgba(196,196,196,.5);
+  --clr-modal-window-back: var(--clr-sym-modal-window-back);
+  --clr-modal-window-border: var(--clr-sym-modal-window-border);
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-modal-backdrop);
+  z-index: 1;
 }
-.c-avatar__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
+.c-modal__window {
+  position: absolute;
+  padding: 1.875rem 2.5rem;
+  max-width: 28.625rem;
+  background-color: var(--clr-modal-window-back);
+  border-radius: 8px;
+  border: 1px solid var(--clr-modal-window-border);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.c-modal__close {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0.9375rem;
+  cursor: pointer;
 }
 </code></pre>
 </div>

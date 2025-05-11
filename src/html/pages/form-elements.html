@@ -21,27 +21,134 @@ layout: page
 
     <div class="c-toggler__html">
 <pre><code data-language="html">
-&lt;picture class=&quot;c-avatar&quot;&gt;
-  &lt;source media=&quot;(min-width: 900px)&quot; srcset=&quot;{{root}}img/cog@2x.png 2x&quot; /&gt;
-  &lt;img class=&quot;c-avatar__image&quot; height=&quot;160&quot; width=&quot;160&quot; src=&quot;{{root}}img/cog-raw.png&quot; alt=&quot;Аватар пользователя&quot;&gt;
-&lt;/picture&gt;
+&lt;label class=&quot;c-checkbox&quot; for=&quot;checkbox-1&quot;&gt;
+  &lt;input id=&quot;checkbox-1&quot; class=&quot;c-checkbox__input&quot; type=&quot;checkbox&quot; /&gt;
+  &lt;div class=&quot;c-checkbox__state&quot;&gt;
+    &lt;div class=&quot;c-checkbox__control&quot;&gt;
+      &lt;svg class=&quot;c-checkbox__icon icon icon--input-check&quot; stroke=&quot;currentColor&quot;&gt;
+        &lt;use xlink:href=&quot;{{root}}img/svg/sprite.svg#input-check&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-checkbox__title&quot;&gt;Заголовок 1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class=&quot;c-radio&quot; for=&quot;radio-1&quot;&gt;
+  &lt;input
+    class=&quot;c-radio__input&quot;
+    type=&quot;radio&quot;
+    name=&quot;radio&quot;
+    id=&quot;radio-1&quot;
+    value=&quot;radio-1&quot;
+  /&gt;
+  &lt;div class=&quot;c-radio__state&quot;&gt;
+    &lt;div class=&quot;c-radio__control&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;c-radio__title&quot;&gt;Заголовок 1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class=&quot;c-switch&quot; for=&quot;switch-off&quot;&gt;
+  &lt;input
+    class=&quot;c-switch__input&quot;
+    type=&quot;checkbox&quot;
+    name=&quot;switch-off&quot;
+    id=&quot;switch-off&quot;
+  /&gt;
+  &lt;div class=&quot;c-switch__state&quot;&gt;
+    &lt;div class=&quot;c-switch__control&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;c-switch__title&quot;&gt;Выключатель&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;div class=&quot;c-input-field&quot;&gt;
+  &lt;div class=&quot;c-input&quot;&gt;
+    &lt;label class=&quot;c-input__label&quot; for=&quot;text-1&quot;&gt;
+      &lt;div class=&quot;c-input__title&quot;&gt;Отключено&lt;/div&gt;
+      &lt;div class=&quot;c-input__input-wrapper&quot;&gt;
+        &lt;input
+          class=&quot;c-input__input&quot;
+          id=&quot;text-1&quot;
+          type=&quot;text&quot;
+          placeholder=&quot;Ввод недоступен&quot;
+          disabled
+        /&gt;
+      &lt;/div&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre></code>
     </div>
 <div class="c-toggler__css">
 <pre><code data-language="css">
-.c-avatar {
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 10rem;
-  height: 10rem;
+.c-checkbox {
+  --clr-checkbox-checked-back: var(--clr-primary-1);
+  --clr-checkbox-checked-border: var(--clr-primary-1);
+  --clr-checkbox-input-border: var(--clr-gray-2);
+  --clr-checkbox-disabled: var(--clr-gray-2);
+  --clr-checkbox-disabled-title: var(--clr-gray-2);
+  --clr-checkbox-animation: var(--clr-sym-checkbox-animation);
+  cursor: pointer;
 }
-.c-avatar__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
+.c-checkbox__icon {
+  color: var(--clr-white);
+  display: none;
+  fill: none;
+}
+.c-checkbox__input {
+  position: absolute;
+  left: -100vw;
+  opacity: 0;
+}
+.c-checkbox__state {
+  display: flex;
+  align-items: center;
+  margin: 1rem 1.3125rem;
+}
+.c-checkbox__title {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--clr-font);
+}
+.c-checkbox__control {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 4px;
+  border: 1px solid var(--clr-checkbox-input-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+@keyframes borderGrow {
+  from {
+    outline: 0rem solid rgba(var(--clr-checkbox-animation), 0.3);
+  }
+  to {
+    outline: 1.875rem solid rgba(var(--clr-checkbox-animation), 0);
+  }
+}
+.c-checkbox__input:checked ~ .c-checkbox__state .c-checkbox__control {
+  background-color: var(--clr-checkbox-checked-back);
+  border: 1px solid var(--clr-checkbox-checked-border);
+}
+.c-checkbox__input:focus:checked ~ .c-checkbox__state .c-checkbox__control {
+  animation: borderGrow 300ms ease-out;
+}
+.c-checkbox__input:checked ~ .c-checkbox__state .c-checkbox__control .c-checkbox__icon {
+  display: inline-block;
+}
+.c-checkbox__input:focus ~ .c-checkbox__state .c-checkbox__title {
+  text-decoration: underline;
+}
+.c-checkbox__input:disabled ~ .c-checkbox__state .c-checkbox__control {
+  background-color: var(--clr-checkbox-disabled);
+}
+.c-checkbox__input:disabled ~ .c-checkbox__state .c-checkbox__title {
+  color: var(--clr-checkbox-disabled-title);
+}
+.c-checkbox__input:disabled ~ .c-checkbox__state .c-checkbox__control .c-checkbox__icon {
+  display: none;
 }
 </code></pre>
 </div>

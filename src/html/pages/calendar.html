@@ -3,7 +3,7 @@ title: Календарь
 layout: page
 ---
 <div class="l-page__component-title-wrapper">
-  <h1 class="l-page__component-title">Аватар</h1>
+  <h1 class="l-page__component-title">Календарь</h1>
 </div>
 <div class="l-page__component-show">
   {{>calendar}}
@@ -81,14 +81,17 @@ layout: page
 <div class="c-toggler__css">
 <pre><code data-language="css">
 .c-calendar {
+  --clr-calendar-title: var(--clr-sym-calendar-title);
+  --clr-calendar-day: var(--clr-sym-calendar-day);
+  --clr-calendar-day-item: var(--clr-sym-calendar-day-item);
+  --clr-calendar-between: var(--clr-font);
   max-width: 300px;
   border: 1px solid var(--clr-gray-3);
   border-radius: 8px;
   padding: 1.75rem 1.875rem 2.5rem;
-  color: #334d6e;
 }
 .c-calendar__title {
-  color: #334D6E;
+  color: var(--clr-calendar-title);
   padding-bottom: 1.5rem;
   font-weight: 600;
   font-size: 1.25rem;
@@ -96,7 +99,7 @@ layout: page
   text-align: center;
 }
 .c-calendar__item-day {
-  color: #90A0B7;
+  color: var(--clr-calendar-day);
 }
 .c-calendar__wrapper {
   padding-bottom: 100%;
@@ -115,9 +118,11 @@ layout: page
   font-size: 1rem;
   line-height: 1.25;
   font-weight: 400;
+  color: var(--clr-calendar-day-item);
 }
 .c-calendar__item-between--active {
   background-color: #A0B1F5;
+  color: var(--clr-calendar-between);
 }
 @media screen and (max-width: 600px) {
   .c-calendar__item {

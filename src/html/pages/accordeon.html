@@ -21,27 +21,113 @@ layout: page
 
     <div class="c-toggler__html">
 <pre><code data-language="html">
-&lt;picture class=&quot;c-avatar&quot;&gt;
-  &lt;source media=&quot;(min-width: 900px)&quot; srcset=&quot;{{root}}img/cog@2x.png 2x&quot; /&gt;
-  &lt;img class=&quot;c-avatar__image&quot; height=&quot;160&quot; width=&quot;160&quot; src=&quot;{{root}}img/cog-raw.png&quot; alt=&quot;Аватар пользователя&quot;&gt;
-&lt;/picture&gt;
+&lt;div class=&quot;c-accordeon&quot;&gt;
+  &lt;section class=&quot;c-collapsed&quot;&gt;
+    &lt;details class=&quot;c-collapsed__details&quot;&gt;
+      &lt;summary class=&quot;c-collapsed__summary&quot;&gt;
+        Один
+      &lt;/summary&gt;
+      &lt;div class=&quot;c-collapsed__secret&quot;&gt;
+        &lt;p&gt;
+          Содержимое раз.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;c-collapsed&quot;&gt;
+    &lt;details class=&quot;c-collapsed__details&quot;&gt;
+      &lt;summary class=&quot;c-collapsed__summary&quot;&gt;Два&lt;/summary&gt;
+      &lt;div class=&quot;c-collapsed__secret&quot;&gt;
+        &lt;p&gt;
+        Содержимое два.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;c-collapsed&quot;&gt;
+    &lt;details class=&quot;c-collapsed__details&quot;&gt;
+      &lt;summary class=&quot;c-collapsed__summary&quot;&gt;Три&lt;/summary&gt;
+      &lt;div class=&quot;c-collapsed__secret&quot;&gt;
+        &lt;p&gt;
+        Содержимое три.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
 </pre></code>
     </div>
 <div class="c-toggler__css">
 <pre><code data-language="css">
-.c-avatar {
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 10rem;
-  height: 10rem;
+.c-collapsed {
+  --clr-summary-back: transparent;
+  --clr-summary-border: var(--clr-gray-3);
+  --size-summary-border-radius: 8px;
+  --clr-accordeon-text: var(--clr-font);
+  --clr-summary-arrow: var(--clr-sym-summary-arrow);
 }
-.c-avatar__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
+.c-collapsed__details {
+  background-color: var(--clr-summary-back);
+  border: 1px solid var(--clr-summary-border);
+  border-radius: var(--size-summary-border-radius, 8px);
+  padding: 0 2rem;
+  color: var(--clr-accordeon-text);
+}
+.c-collapsed__details[open] {
+  padding-bottom: 1.5rem;
+}
+.c-collapsed__details[open] .c-collapsed__summary::after {
+  transform: rotate(180deg);
+}
+.c-collapsed__details[open] summary ~ * {
+  animation: sweep 0.3s ease-in-out;
+}
+.c-collapsed__details:last-child {
+  margin-bottom: 0;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+.c-collapsed__summary {
+  position: relative;
+  padding: 1.5rem 2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  user-select: none;
+  list-style: none;
+  cursor: pointer;
+  color: var(--clr-accordeon-text);
+}
+.c-collapsed__summary::marker, .c-collapsed__summary::-webkit-details-marker {
+  display: none;
+}
+.c-collapsed__summary__summary-arrow {
+  width: 1.125rem;
+  height: 0.625rem;
+}
+.c-collapsed__summary::after {
+  width: 1.125rem;
+  height: 0.625rem;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.3125rem);
+  right: 2rem;
+  mask: url(../img/svg/icons/arrow-down.svg) no-repeat 50% 50%;
+  mask-size: cover;
+  background-color: var(--clr-summary-arrow);
+  transition: transform 200ms ease-in;
+  transform-origin: center;
+}
+.c-collapsed__secret {
+  line-height: 1.5;
 }
 </code></pre>
 </div>

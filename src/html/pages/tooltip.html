@@ -2,5 +2,80 @@
 title: Подсказка
 layout: page
 ---
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Подсказка</h1>
+</div>
+<div class="l-page__component-show">
+  {{>tooltip}}
+</div>
 
-{{>tooltip}}
+<div class="l-page__component-toggler">
+  <div class="c-toggler">
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-html" checked />
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-css" />
+  
+    <div class="c-toggler__scroller">
+      <label class="c-toggler__item" for="#toggle-html">HTML</label>
+      <label class="c-toggler__item" for="#toggle-css">CSS</label>
+    </div>
+
+    <div class="c-toggler__html">
+<pre><code data-language="html">
+&lt;div class=&quot;c-tooltip&quot;&gt;
+  &lt;div class=&quot;c-tooltip-help&quot;&gt;
+    &lt;svg class=&quot;icon icon--help-in-circle&quot; fill=&quot;currentColor&quot;&gt;
+      &lt;use xlink:href=&quot;{{root}}img/svg/sprite.svg#help-in-circle&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;c-tooltip-hint&quot;&gt;
+    Подсказка.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</pre></code>
+    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-tooltip {
+  --clr-tooltip-hint-back: var(--clr-primary-1);
+  position: relative;
+  display: inline-block;
+  height: 1.5rem;
+}
+.c-tooltip-hint {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 11px);
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: var(--clr-tooltip-hint-back);
+  padding: 0.8125rem 1.3125rem 0.5rem;
+  color: var(--clr-white);
+  z-index: 999;
+  border-radius: 10px;
+  text-wrap: pretty;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.c-tooltip-hint::before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top-color: var(--clr-tooltip-hint-back);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.c-tooltip-help {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--clr-font);
+}
+.c-tooltip:hover > .c-tooltip-hint {
+  display: block;
+}
+</code></pre>
+</div>
+  </div>
+</div>
