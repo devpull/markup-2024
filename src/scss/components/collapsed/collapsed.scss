@@ -1,11 +1,10 @@
 @use "../../abstracts/" as *;
 
 .c-collapsed {
-  --clr-summary-back: var(--clr-white);
+  --clr-summary-back: transparent;
   --clr-summary-border: var(--clr-gray-3);
-  --clr-summary-arrow: var(--clr-gray-4);
   --size-summary-border-radius: #{$size-border-radius};
-  --clr-accordeon-text: var(--clr-black);
+  --clr-accordeon-text: var(--clr-font);
 
   &__details {
     background-color: var(--clr-summary-back);
