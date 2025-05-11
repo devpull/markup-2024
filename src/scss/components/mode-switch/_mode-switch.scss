@@ -21,6 +21,11 @@
     color: var(--clr-font);
   }
 
+  .c-switch__state {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .c-switch__control {
     margin: 0 torem(12);
   }
