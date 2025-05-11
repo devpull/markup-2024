@@ -1,6 +1,10 @@
 @use "../../abstracts/" as *;
 
 .c-card {
+  // card
+  --clr-card-back: var(--clr-sym-card-back);
+  --clr-card-shadow: var(--clr-sym-card-shadow);
+
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -27,7 +31,8 @@
     }
   }
 
-  &--tooltip, &--avatar {
+  &--tooltip,
+  &--avatar {
     .c-card__body {
       display: flex;
       justify-content: center;
