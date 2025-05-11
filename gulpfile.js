@@ -19,6 +19,7 @@ const {
   buildClean,
   buildFonts,
   buildCss,
+  buildComponentsCss,
   buildHtml,
   buildJs,
   buildImg,
@@ -55,7 +56,7 @@ exports.build = series(
   buildSetEnv,
   buildClean,
   buildSvg,
-  parallel(buildFonts, buildCss, buildMinCss, buildHtml, buildJs, buildImg),
+  parallel(buildFonts, buildCss, buildComponentsCss, buildMinCss, buildHtml, buildJs, buildImg),
   parallel(buildServe)
 );
 

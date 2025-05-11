@@ -54,6 +54,18 @@ function css() {
     .pipe(dest(buildCssPath, { sourcemaps: "." }));
 }
 
+function componentsCss() {
+  return src("./src/scss/components/**/*.scss")
+    .pipe(sassGlob())
+    .pipe(
+      sass({ silenceDeprecations: ["legacy-js-api"] }).on(
+        "error",
+        sass.logError
+      )
+    )
+    .pipe(dest(buildCssPath + 'components/'));
+}
+
 function minCss() {
   const plugins = [autoprefixer(), cssnano()];
 
@@ -157,6 +169,7 @@ exports.buildSetEnv = setEnv;
 exports.buildClean = clean;
 exports.buildFonts = fonts;
 exports.buildCss = css;
+exports.buildComponentsCss = componentsCss;
 exports.buildMinCss = minCss;
 exports.buildHtml = html;
 exports.buildJs = js;
