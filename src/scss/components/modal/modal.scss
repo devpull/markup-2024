@@ -2,6 +2,8 @@
 
 .c-modal {
   --clr-modal-backdrop: rgba(196,196,196,.5);
+  --clr-modal-window-back: var(--clr-sym-modal-window-back);
+  --clr-modal-window-border: var(--clr-sym-modal-window-border);
   
   display: none;
   position: fixed;
