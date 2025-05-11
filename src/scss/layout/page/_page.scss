@@ -7,6 +7,16 @@
   min-height: 100vh;
   grid-template-columns: 100%;
 
+  &__horizontal-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__vertical-block {
+    display: grid;
+  }
+
   &__single {
     display: grid;
     grid-template-columns: auto 1fr;
