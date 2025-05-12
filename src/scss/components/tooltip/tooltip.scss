@@ -44,7 +44,7 @@
     color: var(--clr-font);
   }
 
-  &:hover > &-hint {
+  &:hover > &-hint, &:focus > &-hint {
     display: block;
   }
 }
