@@ -7,6 +7,10 @@
   min-height: 100vh;
   grid-template-columns: 100%;
 
+  &--single {
+    grid-template-rows: auto 1fr auto;
+  }
+
   &__horizontal-block {
     display: flex;
     flex-wrap: wrap;
