@@ -45,6 +45,10 @@
     font-size: torem(16);
     line-height: lh(24, 16);
     color: var(--clr-primary-1);
+
+    &:focus, &:focus-visible, &:focus-within {
+      outline: revert;
+    }
   }
 
   &__bar {

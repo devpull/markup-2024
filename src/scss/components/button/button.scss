@@ -20,6 +20,10 @@
   transition: #{$btn-transition}, margin-bottom 70ms ease-in-out;
   cursor: pointer;
 
+  &:focus, &:focus-visible, &:focus-within {
+    outline: revert;
+  }
+
   &:active {
     margin-bottom: torem(-2);
   }
