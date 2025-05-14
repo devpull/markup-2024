@@ -1,68 +1,567 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.3b9cfb54cc.css" />
-    <title>Index page</title>
+    <link rel="stylesheet" href="css/main.aa1f061720.css" />
+    <title>Переиспользуемые компоненты</title>
   </head>
   <body>
-    <header class="header">
-      <p>
-        Далеко-далеко за, словесными горами в стране гласных и согласных живут
-        рыбные тексты. Злых власти дороге вопрос родного вскоре? Мир дал за сих
-        безорфографичный реторический коварный, злых использовало вершину
-        предупредила курсивных, своих взгляд.
-      </p>
-    </header>
-    <h2>Sprite</h2>
-    <h2 class="font1">Sprite</h2>
-    <p class="font2">
-      Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
-      тексты. Страна текстами пустился родного вопрос которое снова даже, толку
-      семантика вскоре грустный большой вдали последний залетают подзаголовок
-      предложения бросил языком?
-    </p>
-    <svg class="svg-icons--heart-line-dims">
-      <use xlink:href="img/svg/symbol.be53ae3b95.sprite.svg#icons--heart-line"></use>
-    </svg>
-    <hr />
-    <section class="section">
-      <p>Hero section.</p>
-      <img src="./img/01.73d956c6f0.jpg" srcset="./img/01@2x.54a939b913.jpg 2x" alt="hero image" />
-    </section>
     
-    <section class="section-2">
-      <p>New hero section 2</p>
-      <picture>
-        <source
-          srcset="img/01.58f3f023dc.webp 1x, img/01@2x.ec024a88b3.webp 2x"
-          type="image/webp"
-        />
-        <img
-          src="img/01.73d956c6f0.jpg"
-          srcset="/img/02@2x.a7e11b6aea.jpg 2x"
-          alt="hero image"
-        />
-      </picture>
-    </section>
-    <picture>
-      <source media="(max-width: 768px)" srcset="./img/welcome-bg.7705913683.webp" />
-      <img src="img/welcome-bg.0dc89266a4.jpg" alt="welcome" />
-    </picture>
-    <ul>
-      <li>Card 1</li>
-      <li>Card 2</li>
-      <li>Card 3</li>
-      <li>Card 4</li>
-      <li>Card 5</li>
-      <li>Card 6</li>
-      <li>Card 7</li>
-      <li>Card 8</li>
-      <li>Card 9</li>
-      <li>Card 10</li>
-    </ul>
-    <script src="js/index.1ddf57405f.bundle.js"></script>
+    <div class="l-page">
+      <header class="l-header">
+        <div class="l-container">
+          <div class="l-header__top">
+            <div id="hamburger" class="c-hamburger">
+              <button class="c-btn c-btn__with-icon c-btn__size-32" aria-label="Главное меню">
+                <svg class="icon icon--hamburger" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#hamburger" />
+                </svg>
+              </button>
+            </div>
+            <div class="l-header__logo">
+              <a href="/">
+                <svg class="icon icon--logo" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="l-header__slot-mode-switch">
+              
+              <label class="c-switch c-mode-switch" for="mode-switch">
+                <input
+                  class="c-switch__input"
+                  type="checkbox"
+                  id="mode-switch"
+                />
+                <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+                </svg>
+                <div class="c-switch__state">
+                  <div class="c-switch__control"></div>
+                </div>
+                <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+                </svg>
+              </label>      </div>
+          </div>
+            <div class="l-header__center">
+              <h1 class="l-header__heading">Переиспользуемая библиотека компонентов</h1>
+            </div>
+        </div>
+      </header>
+      <div class="c-tabs">
+        <input name="tabs" class="c-tabs__input" type="radio" id="#tab-all" checked />
+        <input name="tabs" class="c-tabs__input" type="radio" id="#tab-atoms" />
+        <input name="tabs" class="c-tabs__input" type="radio" id="#tab-molecules" />
+        <input name="tabs" class="c-tabs__input" type="radio" id="#tab-organisms" />
+      
+        <div class="c-tabs__scroller l-container">
+          <label class="c-tabs__item" for="#tab-all">Все компоненты</label>
+          <label class="c-tabs__item" for="#tab-atoms">Атомы</label>
+          <label class="c-tabs__item" for="#tab-molecules">Молекулы</label>
+          <label class="c-tabs__item" for="#tab-organisms">Организмы</label>
+        </div>
+      </div>
+      <main class="main l-page__main">
+        <div class="l-container">
+          <section class="l-preview">
+            <div class="l-preview__item" data-type="organism">
+              <a href="histogram.html" class="c-card">
+                <div class="c-card__body"><div class="c-histogram">
+            <div class="c-histogram__top">
+              <div class="c-histogram__orders">
+                <h4 class="c-histogram__title">Всего заказов</h4>
+                <span class="c-histogram__orders">50254</span>
+              </div>
+              <div class="c-histogram__view">
+                <button class="c-histogram__all-href">Все</>
+              </div>
+            </div>
+            <div class="c-histogram__bottom">
+              <div class="c-histogram__chart">
+                <div class="c-histogram__bar" style="height: 98%;"></div>
+                <div class="c-histogram__bar" style="height: 78%;"></div>
+                <div class="c-histogram__bar" style="height: 48%;"></div>
+                <div class="c-histogram__bar" style="height: 38%;"></div>
+                <div class="c-histogram__bar" style="height: 78%;"></div>
+                <div class="c-histogram__bar" style="height: 18%;"></div>
+                <div class="c-histogram__bar" style="height: 78%;"></div>
+                <div class="c-histogram__bar" style="height: 38%;"></div>
+                <div class="c-histogram__bar" style="height: 68%;"></div>
+                <div class="c-histogram__bar" style="height: 78%;"></div>
+                <div class="c-histogram__bar" style="height: 33%;"></div>
+                <div class="c-histogram__bar" style="height: 46%;"></div>
+                <div class="c-histogram__bar" style="height: 67%;"></div>
+                <div class="c-histogram__bar" style="height: 46%;"></div>
+                <div class="c-histogram__bar" style="height: 56%;"></div>
+                <div class="c-histogram__bar" style="height: 18%;"></div>
+                <div class="c-histogram__bar" style="height: 28%;"></div>
+                <div class="c-histogram__bar" style="height: 38%;"></div>
+                <div class="c-histogram__bar" style="height: 48%;"></div>
+                <div class="c-histogram__bar" style="height: 44%;"></div>
+                <div class="c-histogram__bar" style="height: 55%;"></div>
+                <div class="c-histogram__bar" style="height: 44%;"></div>
+                <div class="c-histogram__bar" style="height: 33%;"></div>
+                <div class="c-histogram__bar" style="height: 22%;"></div>
+                <div class="c-histogram__bar" style="height: 11%;"></div>
+                <div class="c-histogram__bar" style="height: 14%;"></div>
+                <div class="c-histogram__bar" style="height: 26%;"></div>
+                <div class="c-histogram__bar" style="height: 45%;"></div>
+                <div class="c-histogram__bar" style="height: 67%;"></div>
+                <div class="c-histogram__bar" style="height: 78%;"></div>
+                <div class="c-histogram__bar" style="height: 88%;"></div>
+                <div class="c-histogram__bar" style="height: 98%;"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+                <div class="c-card__title">
+                  <p>Гистограмма</p>
+                  <p class="c-card__type">Организм</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item" data-type="molecule">
+              <a href="calendar.html" class="c-card c-card--calendar">
+                <div class="c-card__body"><div class="c-calendar">
+            <div class="c-calendar__title">Февраль 2024</div>
+            <div class="c-calendar__wrapper">
+              <div class="c-calendar__inner">
+                <span class="c-calendar__item c-calendar__item-day">Пн</span>
+                <span class="c-calendar__item c-calendar__item-day">Вт</span>
+                <span class="c-calendar__item c-calendar__item-day">Ср</span>
+                <span class="c-calendar__item c-calendar__item-day">Чт</span>
+                <span class="c-calendar__item c-calendar__item-day">Пт</span>
+                <span class="c-calendar__item c-calendar__item-day">Сб</span>
+                <span class="c-calendar__item c-calendar__item-day">Вс</span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item">1</span
+                ><span class="c-calendar__item">2</span
+                ><span class="c-calendar__item">3</span
+                ><span class="c-calendar__item">4</span
+                ><span class="c-calendar__item">5</span
+                ><span class="c-calendar__item">6</span
+                ><span class="c-calendar__item">7</span
+                ><span class="c-calendar__item">8</span
+                ><span class="c-calendar__item">9</span
+                ><span class="c-calendar__item">10</span
+                ><span class="c-calendar__item c-calendar__item-active">11</span
+                ><span class="c-calendar__item c-calendar__item-between--active">12</span
+                ><span class="c-calendar__item c-calendar__item-between--active">13</span
+                ><span class="c-calendar__item c-calendar__item-between--active">14</span
+                ><span class="c-calendar__item c-calendar__item-active">15</span
+                ><span class="c-calendar__item">16</span
+                ><span class="c-calendar__item">17</span
+                ><span class="c-calendar__item">18</span
+                ><span class="c-calendar__item">19</span
+                ><span class="c-calendar__item">20</span
+                ><span class="c-calendar__item">21</span
+                ><span class="c-calendar__item">22</span
+                ><span class="c-calendar__item">23</span
+                ><span class="c-calendar__item">24</span
+                ><span class="c-calendar__item">25</span
+                ><span class="c-calendar__item">26</span
+                ><span class="c-calendar__item">27</span
+                ><span class="c-calendar__item">28</span>
+                <span class="c-calendar__item">29</span>
+                <span class="c-calendar__item">30</span>
+                <span class="c-calendar__item">31</span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item"></span>
+                <span class="c-calendar__item"></span>
+              </div>
+            </div>
+          </div>
+          </div>
+                <div class="c-card__title">
+                  <p>Календарь</p>
+                  <p class="c-card__type">Молекула</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item" data-type="atom">
+              <a href="tooltip.html" class="c-card c-card--tooltip">
+                <div class="c-card__body"><div class="c-tooltip">
+            <div class="c-tooltip-help">
+              <svg class="icon icon--help-in-circle" fill="currentColor">
+                <use xlink:href="img/svg/sprite.8915b6dff5.svg#help-in-circle" />
+              </svg>
+            </div>
+            <div class="c-tooltip-hint" style="display: block; ">
+              Подсказка.
+            </div>
+          </div>
+          </div>
+                <div class="c-card__title">
+                  <p>Подсказка</p>
+                  <p class="c-card__type">Атом</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item" data-type="atom">
+              <a href="avatar.html" class="c-card c-card--avatar">
+                <div class="c-card__body"><picture class="c-avatar">
+            <source media="(min-width: 900px)" srcset="img/cog@2x.cc537c9a8e.png 2x" />
+            <img class="c-avatar__image" height="160" width="160" src="img/cog-raw.926273b205.png" alt="Аватар пользователя">
+          </picture></div>
+                <div class="c-card__title">
+                  <p>Аватар</p>
+                  <p class="c-card__type">Атом</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item" data-type="organism">
+              <a href="modal.html" class="c-card">
+                <div class="c-card__body"><div id="modal-preview" class="c-modal c-modal--preview">
+            <div class="c-modal__back c-modal__back--preview"></div>
+            <div class="c-modal__window">
+              <div id="modal-close" class="c-modal__close">
+                <svg class="icon icon--close-cross" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#close-cross"></use>
+                </svg>
+              </div>
+              <div class="c-modal__body">
+                <div class="c-input-field">
+                  <div class="c-input c-input--preview">
+                    <label class="c-input__label" for="text-1">
+                      <div class="c-input__title">Имя</div>
+                      <div class="c-input__input-wrapper">
+                        <input
+                          class="c-input__input"
+                          id="text-1"
+                          type="text"
+                          placeholder="Имя Фамилия"
+                          tabindex="-1"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="c-input-field">
+                  <div class="c-input c-input--preview">
+                    <label class="c-input__label" for="text-2">
+                      <div class="c-input__title">Email</div>
+                      <div class="c-input__input-wrapper">
+                        <input
+                          class="c-input__input"
+                          id="text-2"
+                          type="text"
+                          placeholder="example@mail.ru"
+                          tabindex="-1"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <button type="button" class="c-btn c-btn--primary c-btn--small" tabindex="-1">
+                  Отправить
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+                <div class="c-card__title">
+                  <p>Модальное окно</p>
+                  <p class="c-card__type">Организм</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item" data-type="molecule">
+              <a href="skeleton.html" class="c-card">
+                <div class="c-card__body"><div class="l-skeletons h-mb30">
+            <div class="c-skeleton">
+              <div class="c-skeleton__row c-skeleton__row--with-avatar">
+                <div class="c-skeleton__avatar"></div>
+                <div class="c-skeleton__paragraph">
+                  <div class="c-skeleton__string c-skeleton__string--50"></div>
+                  <div class="c-skeleton__string c-skeleton__string--70"></div>
+                </div>
+              </div>
+              <div class="c-skeleton__row">
+                <div class="c-skeleton__paragraph">
+                  <div class="c-skeleton__string c-skeleton__string--100"></div>
+                  <div class="c-skeleton__string c-skeleton__string--100"></div>
+                </div>
+              </div>
+            </div>
+          </div></div>
+                <div class="c-card__title">
+                  <p>Заглушка</p>
+                  <p class="c-card__type">Молекула</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item" data-type="organism">
+              <a href="accordeon.html" class="c-card">
+                <div class="c-card__body"><div class="c-accordeon">
+            <section class="c-collapsed">
+              <details class="c-collapsed__details" open>
+                <summary class="c-collapsed__summary">Открыто</summary>
+                <div class="c-collapsed__secret">
+                  <p>
+                    Содержание
+                  </p>
+                </div>
+              </details>
+            </section>
+            <section class="c-collapsed">
+              <details class="c-collapsed__details">
+                <summary class="c-collapsed__summary">Закрыто</summary>
+                <div class="c-collapsed__secret">
+                  <p>
+                    Содержание
+                  </p>
+                </div>
+              </details>
+            </section>
+          </div>
+          </div>
+                <div class="c-card__title">
+                  <p>Аккордеон</p>
+                  <p class="c-card__type">Организм</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item" data-type="atom">
+              <a href="button.html" class="c-card">
+                <div class="c-card__body"><div class="h-row h-flex h-flex-wrap h-align-center h-gap10 h-mb30">
+            <button type="button" class="c-btn c-btn--primary c-btn--full-width">Основная</button
+            ><button type="button" class="c-btn c-btn--secondary c-btn--full-width">Дополнительная</button
+            ><button type="button" class="c-btn c-btn--alt c-btn--full-width">Альтернативная</button>
+          </div>
+          <div class="h-row l-preview--buttons-row-2">
+            <button type="button" class="c-btn c-btn--primary" disabled>Осн</button
+            ><button type="button" class="c-btn c-btn--secondary" disabled>
+              Доп</button
+            ><button type="button" class="c-btn c-btn--alt" disabled>
+              Альт
+            </button>
+          </div>
+          </div>
+                <div class="c-card__title">
+                  <p>Кнопка</p>
+                  <p class="c-card__type">Атом</p>
+                </div>
+              </a>
+            </div>
+            <div class="l-preview__item l-preview--form-elements" data-type="molecule">
+              <a href="form-elements.html" class="c-card">
+                <div class="c-card__body"><div class="l-preview--radios-col">
+            <label class="c-radio" for="radio-1">
+              <input
+                class="c-radio__input"
+                type="radio"
+                name="radio"
+                id="radio-1"
+                value="radio-1"
+              />
+              <div class="c-radio__state">
+                <div class="c-radio__control"></div>
+                <div class="c-radio__title">Дефолт</div>
+              </div>
+            </label>
+            
+            <label class="c-radio" for="radio-2">
+              <input
+                class="c-radio__input"
+                type="radio"
+                name="radio"
+                id="radio-2"
+                value="radio-2"
+                checked
+              />
+              <div class="c-radio__state">
+                <div class="c-radio__control"></div>
+                <div class="c-radio__title">Вкл</div>
+              </div>
+            </label>
+            
+            <label class="c-radio" for="radio-3">
+              <input
+                class="c-radio__input"
+                type="radio"
+                name="radio"
+                id="radio-3"
+                value="radio-3"
+                disabled
+              />
+              <div class="c-radio__state">
+                <div class="c-radio__control"></div>
+                <div class="c-radio__title">Выкл</div>
+              </div>
+            </label>
+          </div>
+          
+          <div class="l-preview--checkboxes-col">
+            <label class="c-checkbox" for="checkbox-1">
+              <input id="checkbox-1" class="c-checkbox__input" type="checkbox" />
+              <div class="c-checkbox__state">
+                <div class="c-checkbox__control">
+                  <svg class="c-checkbox__icon icon icon--input-check" stroke="currentColor">
+                    <use xlink:href="img/svg/sprite.8915b6dff5.svg#input-check" />
+                  </svg>
+                </div>
+                <div class="c-checkbox__title">Дефолт</div>
+              </div>
+            </label>
+            
+            <label class="c-checkbox" for="checkbox-2">
+              <input id="checkbox-2" class="c-checkbox__input" type="checkbox" checked />
+              <div class="c-checkbox__state">
+                <div class="c-checkbox__control">
+                  <svg class="c-checkbox__icon icon icon--input-check" stroke="currentColor">
+                    <use xlink:href="img/svg/sprite.8915b6dff5.svg#input-check" />
+                  </svg>
+                </div>
+                <div class="c-checkbox__title">Вкл</div>
+              </div>
+            </label>
+            
+            <label class="c-checkbox" for="checkbox-3">
+              <input id="checkbox-3" class="c-checkbox__input" type="checkbox" disabled />
+              <div class="c-checkbox__state">
+                <div class="c-checkbox__control">
+                  <svg class="c-checkbox__icon icon icon--input-check" stroke="currentColor">
+                    <use xlink:href="img/svg/sprite.8915b6dff5.svg#input-check" />
+                  </svg>
+                </div>
+                <div class="c-checkbox__title">Выкл</div>
+              </div>
+            </label>
+          </div></div>
+                <div class="c-card__title">
+                  <p>Эленты форм</p>
+                  <p class="c-card__type">молекула</p>
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="l-footer">
+        <div class="l-container">
+          Переиспользуемая библиотека компонентов
+        </div>
+      </footer></div>
     
+    <div id="main-nav-mobile" class="l-main-nav-mobile">
+      <div class="l-container">
+        <div class="l-main-nav-mobile__top">
+          <button
+            id="main-nav-mobile-close"
+            class="c-btn c-btn__with-icon c-btn__round c-btn--gray c-btn__size-32"
+          >
+            <svg class="icon icon--close-cross">
+              <use xlink:href="img/svg/sprite.8915b6dff5.svg#close-cross" />
+            </svg>
+          </button>
+          <div class="l-main-nav-mobile__logo">
+            <a href="/">
+              <svg class="icon icon--logo" fill="currentColor">
+                <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="c-mode-switch__container"><label class="c-switch c-mode-switch" for="mode-switch-mobile">
+      <input
+        class="c-switch__input"
+        type="checkbox"
+        id="mode-switch-mobile"
+      />
+      <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+      </svg>
+      <div class="c-switch__state">
+        <div class="c-switch__control"></div>
+      </div>
+      <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+      </svg>
+    </label> </div>
+        <nav class="l-components-nav">
+          <h4 class="l-components-nav__title--mobile">Компоненты</h4>
+          <ul>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="histogram.html"
+                >Гистограмма</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="calendar.html"
+                >Календарь</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="tooltip.html"
+                >Подсказка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="avatar.html"
+                >Аватар</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="modal.html"
+                >Модальное окно</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="skeleton.html"
+                >Заглушка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="accordeon.html"
+                >Аккордеон</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="button.html"
+                >Кнопка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="form-elements.html"
+                >Элементы форм</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link l-components-nav__link--active"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/index.6e0d45e3da.bundle.js"></script>
   </body>
 </html>

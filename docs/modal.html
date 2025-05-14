@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.aa1f061720.css" />
+    <title>Модальное окно</title>
+  </head>
+  <body>
+    <div class="l-page l-page--single">
+      <header class="l-header l-header--transparent-back">
+        <div class="l-container">
+          <div class="l-header__top">
+            <div id="hamburger" class="c-hamburger">
+              <button class="c-btn c-btn__with-icon c-btn__size-32" aria-label="Главное меню">
+                <svg class="icon icon--hamburger" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#hamburger" />
+                </svg>
+              </button>
+            </div>
+            <div class="l-header__logo">
+              <a href="/">
+                <svg class="icon icon--logo" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="l-header__slot-mode-switch">
+              
+              <label class="c-switch c-mode-switch" for="mode-switch">
+                <input
+                  class="c-switch__input"
+                  type="checkbox"
+                  id="mode-switch"
+                />
+                <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+                </svg>
+                <div class="c-switch__state">
+                  <div class="c-switch__control"></div>
+                </div>
+                <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+                </svg>
+              </label>      </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="l-container l-page__single">
+          <aside class="l-sidebar">
+            <h4 class="l-sidebar__title">Компоненты</h4>
+            <nav class="l-components-nav">
+              <ul>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="histogram.html">Гистограмма</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="calendar.html">Календарь</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="tooltip.html">Подсказка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="avatar.html">Аватар</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link l-components-nav__link--active" href="modal.html">Модальное окно</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="skeleton.html">Заглушка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="accordeon.html">Аккордеон</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="button.html">Кнопка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="form-elements.html">Элементы форм</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="index.html">Главная</a></li>
+              </ul>
+            </nav>
+          </aside><div class="l-page__component-wrapper">
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Модальное окно</h1>
+</div>
+<div class="l-page__component-show">
+  <button id="modal-open" class="c-btn c-btn--primary">
+    Открыть модальное окно
+  </button>
+  <div id="modal" class="c-modal">
+    <div class="c-modal__back"></div>
+    <div class="c-modal__window">
+      <div id="modal-close" class="c-modal__close">
+        <svg class="icon icon--close-cross" fill="currentColor">
+          <use xlink:href="img/svg/sprite.8915b6dff5.svg#close-cross"></use>
+        </svg>
+      </div>
+      <div class="c-modal__body">
+        Далеко-далеко за словесными горами в стране гласных и согласных живут
+        рыбные тексты. Своих однажды безорфографичный эта текстов он, скатился
+        путь пустился обеспечивает.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-page__component-toggler">
+  <div class="c-toggler">
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-html" checked />
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-css" />
+  
+    <div class="c-toggler__scroller">
+      <label class="c-toggler__item" for="#toggle-html">HTML</label>
+      <label class="c-toggler__item" for="#toggle-css">CSS</label>
+    </div>
+
+    <div class="c-toggler__html">
+<pre><code data-language="html">
+&lt;button id=&quot;modal-open&quot; class=&quot;c-btn c-btn--primary&quot;&gt;
+  Открыть модальное окно
+&lt;/button&gt;
+&lt;div id=&quot;modal&quot; class=&quot;c-modal&quot;&gt;
+  &lt;div class=&quot;c-modal__back&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;c-modal__window&quot;&gt;
+    &lt;div id=&quot;modal-close&quot; class=&quot;c-modal__close&quot;&gt;
+      &lt;svg class=&quot;icon icon--close-cross&quot; fill=&quot;currentColor&quot;&gt;
+        &lt;use xlink:href=&quot;img/svg/sprite.svg#close-cross&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-modal__body&quot;&gt;
+      Тут содержимое.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre></code>
+    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-modal {
+  --clr-modal-backdrop: rgba(196,196,196,.5);
+  --clr-modal-window-back: var(--clr-sym-modal-window-back);
+  --clr-modal-window-border: var(--clr-sym-modal-window-border);
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-modal-backdrop);
+  z-index: 1;
+}
+.c-modal__window {
+  position: absolute;
+  padding: 1.875rem 2.5rem;
+  max-width: 28.625rem;
+  background-color: var(--clr-modal-window-back);
+  border-radius: 8px;
+  border: 1px solid var(--clr-modal-window-border);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.c-modal__close {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0.9375rem;
+  cursor: pointer;
+}
+</code></pre>
+</div>
+  </div>
+</div>
+</div>
+        </div>
+      </main>
+      <footer class="l-footer l-footer__transparent-back">
+        <div class="l-container">
+          Переиспользуемая библиотека компонентов
+        </div>
+      </footer>    </div>
+    <div id="main-nav-mobile" class="l-main-nav-mobile">
+      <div class="l-container">
+        <div class="l-main-nav-mobile__top">
+          <button
+            id="main-nav-mobile-close"
+            class="c-btn c-btn__with-icon c-btn__round c-btn--gray c-btn__size-32"
+          >
+            <svg class="icon icon--close-cross">
+              <use xlink:href="img/svg/sprite.8915b6dff5.svg#close-cross" />
+            </svg>
+          </button>
+          <div class="l-main-nav-mobile__logo">
+            <a href="/">
+              <svg class="icon icon--logo" fill="currentColor">
+                <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="c-mode-switch__container"><label class="c-switch c-mode-switch" for="mode-switch-mobile">
+      <input
+        class="c-switch__input"
+        type="checkbox"
+        id="mode-switch-mobile"
+      />
+      <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+      </svg>
+      <div class="c-switch__state">
+        <div class="c-switch__control"></div>
+      </div>
+      <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+      </svg>
+    </label> </div>
+        <nav class="l-components-nav">
+          <h4 class="l-components-nav__title--mobile">Компоненты</h4>
+          <ul>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="histogram.html"
+                >Гистограмма</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="calendar.html"
+                >Календарь</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="tooltip.html"
+                >Подсказка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="avatar.html"
+                >Аватар</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link l-components-nav__link--active"
+                href="modal.html"
+                >Модальное окно</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="skeleton.html"
+                >Заглушка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="accordeon.html"
+                >Аккордеон</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="button.html"
+                >Кнопка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="form-elements.html"
+                >Элементы форм</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/index.6e0d45e3da.bundle.js"></script>
+    <script src="js/rainbow-custom.cda56b6c87.min.js"></script>
+  </body>
+</html>

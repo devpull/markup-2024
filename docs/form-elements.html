@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.aa1f061720.css" />
+    <title>Элементы форм</title>
+  </head>
+  <body>
+    <div class="l-page l-page--single">
+      <header class="l-header l-header--transparent-back">
+        <div class="l-container">
+          <div class="l-header__top">
+            <div id="hamburger" class="c-hamburger">
+              <button class="c-btn c-btn__with-icon c-btn__size-32" aria-label="Главное меню">
+                <svg class="icon icon--hamburger" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#hamburger" />
+                </svg>
+              </button>
+            </div>
+            <div class="l-header__logo">
+              <a href="/">
+                <svg class="icon icon--logo" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="l-header__slot-mode-switch">
+              
+              <label class="c-switch c-mode-switch" for="mode-switch">
+                <input
+                  class="c-switch__input"
+                  type="checkbox"
+                  id="mode-switch"
+                />
+                <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+                </svg>
+                <div class="c-switch__state">
+                  <div class="c-switch__control"></div>
+                </div>
+                <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+                </svg>
+              </label>      </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="l-container l-page__single">
+          <aside class="l-sidebar">
+            <h4 class="l-sidebar__title">Компоненты</h4>
+            <nav class="l-components-nav">
+              <ul>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="histogram.html">Гистограмма</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="calendar.html">Календарь</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="tooltip.html">Подсказка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="avatar.html">Аватар</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="modal.html">Модальное окно</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="skeleton.html">Заглушка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="accordeon.html">Аккордеон</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="button.html">Кнопка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link l-components-nav__link--active" href="form-elements.html">Элементы форм</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="index.html">Главная</a></li>
+              </ul>
+            </nav>
+          </aside><div class="l-page__component-wrapper">
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Элементы форм</h1>
+</div>
+<div class="l-page__component-show">
+  <section>
+    <div class="l-page__horizontal-block">
+      <div class="l-page__vertical-block"><label class="c-checkbox" for="checkbox-1">
+    <input id="checkbox-1" class="c-checkbox__input" type="checkbox" />
+    <div class="c-checkbox__state">
+      <div class="c-checkbox__control">
+        <svg class="c-checkbox__icon icon icon--input-check" stroke="currentColor">
+          <use xlink:href="img/svg/sprite.8915b6dff5.svg#input-check" />
+        </svg>
+      </div>
+      <div class="c-checkbox__title">Заголовок 1</div>
+    </div>
+  </label>
+  
+  <label class="c-checkbox" for="checkbox-2">
+    <input id="checkbox-2" class="c-checkbox__input" type="checkbox" checked />
+    <div class="c-checkbox__state">
+      <div class="c-checkbox__control">
+        <svg class="c-checkbox__icon icon icon--input-check" stroke="currentColor">
+          <use xlink:href="img/svg/sprite.8915b6dff5.svg#input-check" />
+        </svg>
+      </div>
+      <div class="c-checkbox__title">Заголовок 2</div>
+    </div>
+  </label>
+  
+  <label class="c-checkbox" for="checkbox-3">
+    <input id="checkbox-3" class="c-checkbox__input" type="checkbox" disabled />
+    <div class="c-checkbox__state">
+      <div class="c-checkbox__control">
+        <svg class="c-checkbox__icon icon icon--input-check" stroke="currentColor">
+          <use xlink:href="img/svg/sprite.8915b6dff5.svg#input-check" />
+        </svg>
+      </div>
+      <div class="c-checkbox__title">Заголовок 3</div>
+    </div>
+  </label></div>
+      <div class="l-page__vertical-block"><label class="c-radio" for="radio-1">
+    <input
+      class="c-radio__input"
+      type="radio"
+      name="radio"
+      id="radio-1"
+      value="radio-1"
+    />
+    <div class="c-radio__state">
+      <div class="c-radio__control"></div>
+      <div class="c-radio__title">Заголовок 1</div>
+    </div>
+  </label>
+  
+  <label class="c-radio" for="radio-2">
+    <input
+      class="c-radio__input"
+      type="radio"
+      name="radio"
+      id="radio-2"
+      value="radio-2"
+      checked
+    />
+    <div class="c-radio__state">
+      <div class="c-radio__control"></div>
+      <div class="c-radio__title">Заголовок 2</div>
+    </div>
+  </label>
+  
+  <label class="c-radio" for="radio-3">
+    <input
+      class="c-radio__input"
+      type="radio"
+      name="radio"
+      id="radio-3"
+      value="radio-3"
+      disabled
+    />
+    <div class="c-radio__state">
+      <div class="c-radio__control"></div>
+      <div class="c-radio__title">Заголовок 3</div>
+    </div>
+  </label></div>
+      <div class="l-page__vertical-block"><label class="c-switch" for="switch-off">
+    <input
+      class="c-switch__input"
+      type="checkbox"
+      name="switch-off"
+      id="switch-off"
+    />
+    <div class="c-switch__state">
+      <div class="c-switch__control"></div>
+      <div class="c-switch__title">Выключатель</div>
+    </div>
+  </label>
+  
+  <label class="c-switch" for="switch-on">
+    <input
+      class="c-switch__input"
+      type="checkbox"
+      name="switch-on"
+      id="switch-on"
+      checked
+    />
+    <div class="c-switch__state">
+      <div class="c-switch__control"></div>
+      <div class="c-switch__title">Выключатель</div>
+    </div>
+  </label>
+  
+  <label class="c-switch" for="switch-disabled">
+    <input
+      class="c-switch__input"
+      type="checkbox"
+      name="switch-disabled"
+      id="switch-disabled"
+      disabled
+    />
+    <div class="c-switch__state">
+      <div class="c-switch__control"></div>
+      <div class="c-switch__title">Выключатель</div>
+    </div>
+  </label>
+  </div>
+    </div>
+    <div class="c-input-field">
+      <div class="c-input">
+        <label class="c-input__label" for="text-1">
+          <div class="c-input__title">Отключено</div>
+          <div class="c-input__input-wrapper">
+            <input
+              class="c-input__input"
+              id="text-1"
+              type="text"
+              placeholder="Ввод недоступен"
+              disabled
+            />
+          </div>
+        </label>
+      </div>
+    </div>
+    
+    <div class="c-input-field">
+      <div class="c-input">
+        <label class="c-input__label" for="text-2">
+          <div class="c-input__title">Ярлык</div>
+          <div class="c-input__input-wrapper">
+            <input
+              class="c-input__input"
+              id="text-2"
+              type="text"
+              placeholder="Текст"
+              value="Заполненное поле"
+            />
+          </div>
+        </label>
+      </div>
+    </div>
+    
+    <div class="c-input-field">
+      <div class="c-input">
+        <label class="c-input__label" for="text-3">
+          <div class="c-input__title">Фокус</div>
+          <div class="c-input__input-wrapper">
+            <input
+              class="c-input__input"
+              id="text-3"
+              type="text"
+              placeholder="Текст"
+            />
+          </div>
+        </label>
+      </div>
+    </div>
+    
+    <div class="c-input-field">
+      <div class="c-input">
+        <label class="c-input__label" for="text-4">
+          <div class="c-input__title">Подтверждение</div>
+          <div class="c-input__input-wrapper">
+            <input
+              class="c-input__input c-input__valid"
+              id="text-4"
+              type="text"
+              placeholder="Текст"
+              value="Подтверждение"
+            />
+            <svg class="icon icon--check-circle c-input__icon c-input__icon--valid" stroke="currentColor">
+              <use xlink:href="img/svg/sprite.8915b6dff5.svg#check-circle"></use>
+            </svg>
+          </div>
+        </label>
+      </div>
+    </div>
+    
+    <div class="c-input-field">
+      <div class="c-input">
+        <label class="c-input__label" for="text-5">
+          <div class="c-input__title">Подтверждение</div>
+          <div class="c-input__input-wrapper">
+            <input
+              class="c-input__input c-input__invalid"
+              id="text-5"
+              type="text"
+              placeholder="Текст"
+              value="Ошибка"
+            />
+            <svg class="icon icon--check-circle c-input__icon c-input__icon--invalid" stroke="currentColor">
+              <use xlink:href="img/svg/sprite.8915b6dff5.svg#alert-triangle"></use>
+            </svg>
+          </div>
+        </label>
+      </div>
+    </div></section>
+</div>
+
+<div class="l-page__component-toggler">
+  <div class="c-toggler">
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-html" checked />
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-css" />
+  
+    <div class="c-toggler__scroller">
+      <label class="c-toggler__item" for="#toggle-html">HTML</label>
+      <label class="c-toggler__item" for="#toggle-css">CSS</label>
+    </div>
+
+    <div class="c-toggler__html">
+<pre><code data-language="html">
+&lt;label class=&quot;c-checkbox&quot; for=&quot;checkbox-1&quot;&gt;
+  &lt;input id=&quot;checkbox-1&quot; class=&quot;c-checkbox__input&quot; type=&quot;checkbox&quot; /&gt;
+  &lt;div class=&quot;c-checkbox__state&quot;&gt;
+    &lt;div class=&quot;c-checkbox__control&quot;&gt;
+      &lt;svg class=&quot;c-checkbox__icon icon icon--input-check&quot; stroke=&quot;currentColor&quot;&gt;
+        &lt;use xlink:href=&quot;img/svg/sprite.svg#input-check&quot; /&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-checkbox__title&quot;&gt;Заголовок 1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class=&quot;c-radio&quot; for=&quot;radio-1&quot;&gt;
+  &lt;input
+    class=&quot;c-radio__input&quot;
+    type=&quot;radio&quot;
+    name=&quot;radio&quot;
+    id=&quot;radio-1&quot;
+    value=&quot;radio-1&quot;
+  /&gt;
+  &lt;div class=&quot;c-radio__state&quot;&gt;
+    &lt;div class=&quot;c-radio__control&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;c-radio__title&quot;&gt;Заголовок 1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;label class=&quot;c-switch&quot; for=&quot;switch-off&quot;&gt;
+  &lt;input
+    class=&quot;c-switch__input&quot;
+    type=&quot;checkbox&quot;
+    name=&quot;switch-off&quot;
+    id=&quot;switch-off&quot;
+  /&gt;
+  &lt;div class=&quot;c-switch__state&quot;&gt;
+    &lt;div class=&quot;c-switch__control&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;c-switch__title&quot;&gt;Выключатель&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/label&gt;
+
+&lt;div class=&quot;c-input-field&quot;&gt;
+  &lt;div class=&quot;c-input&quot;&gt;
+    &lt;label class=&quot;c-input__label&quot; for=&quot;text-1&quot;&gt;
+      &lt;div class=&quot;c-input__title&quot;&gt;Отключено&lt;/div&gt;
+      &lt;div class=&quot;c-input__input-wrapper&quot;&gt;
+        &lt;input
+          class=&quot;c-input__input&quot;
+          id=&quot;text-1&quot;
+          type=&quot;text&quot;
+          placeholder=&quot;Ввод недоступен&quot;
+          disabled
+        /&gt;
+      &lt;/div&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre></code>
+    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-checkbox {
+  --clr-checkbox-checked-back: var(--clr-primary-1);
+  --clr-checkbox-checked-border: var(--clr-primary-1);
+  --clr-checkbox-input-border: var(--clr-gray-2);
+  --clr-checkbox-disabled: var(--clr-gray-2);
+  --clr-checkbox-disabled-title: var(--clr-gray-2);
+  --clr-checkbox-animation: var(--clr-sym-checkbox-animation);
+  cursor: pointer;
+}
+.c-checkbox__icon {
+  color: var(--clr-white);
+  display: none;
+  fill: none;
+}
+.c-checkbox__input {
+  position: absolute;
+  left: -100vw;
+  opacity: 0;
+}
+.c-checkbox__state {
+  display: flex;
+  align-items: center;
+  margin: 1rem 1.3125rem;
+}
+.c-checkbox__title {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--clr-font);
+}
+.c-checkbox__control {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 4px;
+  border: 1px solid var(--clr-checkbox-input-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+@keyframes borderGrow {
+  from {
+    outline: 0rem solid rgba(var(--clr-checkbox-animation), 0.3);
+  }
+  to {
+    outline: 1.875rem solid rgba(var(--clr-checkbox-animation), 0);
+  }
+}
+.c-checkbox__input:checked ~ .c-checkbox__state .c-checkbox__control {
+  background-color: var(--clr-checkbox-checked-back);
+  border: 1px solid var(--clr-checkbox-checked-border);
+}
+.c-checkbox__input:focus:checked ~ .c-checkbox__state .c-checkbox__control {
+  animation: borderGrow 300ms ease-out;
+}
+.c-checkbox__input:checked ~ .c-checkbox__state .c-checkbox__control .c-checkbox__icon {
+  display: inline-block;
+}
+.c-checkbox__input:focus ~ .c-checkbox__state .c-checkbox__title {
+  text-decoration: underline;
+}
+.c-checkbox__input:disabled ~ .c-checkbox__state .c-checkbox__control {
+  background-color: var(--clr-checkbox-disabled);
+}
+.c-checkbox__input:disabled ~ .c-checkbox__state .c-checkbox__title {
+  color: var(--clr-checkbox-disabled-title);
+}
+.c-checkbox__input:disabled ~ .c-checkbox__state .c-checkbox__control .c-checkbox__icon {
+  display: none;
+}
+
+
+.c-radio {
+  --clr-radio-unchecked-border: var(--clr-gray-2);
+  --clr-radio-color: var(--clr-primary-1);
+  --clr-radio-title: var(--clr-gray-2);
+  --clr-radio-disabled-back: var(--clr-gray-2);
+  --clr-radio-disabled-border: var(--clr-gray-2);
+  display: inline-flex;
+  cursor: pointer;
+}
+.c-radio__input {
+  opacity: 0;
+  position: absolute;
+  left: -100vw;
+}
+.c-radio__state {
+  display: flex;
+  align-items: center;
+  margin: 1rem 1.3125rem;
+}
+.c-radio__control {
+  position: relative;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--clr-radio-unchecked-border);
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+.c-radio__title {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--clr-font);
+}
+.c-radio__input:checked ~ .c-radio__state .c-radio__control {
+  border: 2px solid var(--clr-radio-color);
+}
+.c-radio__input:checked ~ .c-radio__state .c-radio__control::after {
+  width: 1.125rem;
+  height: 1.125rem;
+  content: "";
+  position: absolute;
+  background-color: var(--clr-radio-color);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.c-radio__input:focus ~ .c-radio__state .c-radio__title {
+  text-decoration: underline;
+}
+.c-radio__input:disabled ~ .c-radio__state .c-radio__title {
+  color: var(--clr-radio-title);
+}
+.c-radio__input:disabled ~ .c-radio__state .c-radio__control {
+  background-color: var(--clr-radio-disabled-back);
+  border: 2px solid var(--clr-radio-disabled-border);
+}
+
+
+.c-switch {
+  display: inline-flex;
+  cursor: pointer;
+}
+.c-switch__input {
+  opacity: 0;
+  position: absolute;
+  left: -100vw;
+}
+.c-switch__control {
+  position: relative;
+  width: 3.25rem;
+  height: 1.75rem;
+  border: 1px solid var(--clr-gray-2);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  margin-right: 0.75rem;
+  transition: background-color 0.2s;
+}
+.c-switch__state {
+  display: flex;
+  align-items: center;
+  margin: 1rem 1.3125rem;
+}
+.c-switch__control::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 0.0625rem;
+  top: calc(50% - 0.75rem);
+  background-color: var(--clr-gray-2);
+  border-radius: 50%;
+  transition: left 0.2s;
+}
+.c-switch__input:checked ~ .c-switch__state .c-switch__control {
+  border: 1px solid var(--clr-primary-1);
+  background-color: var(--clr-primary-1);
+}
+.c-switch__input:checked ~ .c-switch__state .c-switch__control::before {
+  left: 1.5625rem;
+  background-color: var(--clr-white);
+}
+.c-switch__input:disabled ~ .c-switch__state .c-switch__control {
+  background-color: var(--clr-gray-2);
+}
+.c-switch__input:disabled ~ .c-switch__state .c-switch__control::before {
+  background-color: var(--clr-gray-3);
+}
+.c-switch__input:focus ~ .c-switch__state .c-switch__title {
+  text-decoration: underline;
+}
+
+
+.c-input {
+  --clr-input-back: var(--clr-sym-input-back);
+  --clr-input-border: var(--clr-gray-2);
+  --clr-input-placeholder: var(--clr-gray-2);
+  --clr-input-invalid: #F03D3E;
+  --clr-input-icon-valid: #374FC7;
+  --clr-input-border-focus: var(--clr-primary-1);
+  --clr-input-back-disabled: var(--clr-sym-input-back-disabled);
+}
+.c-input__title {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 0.3125rem;
+  color: var(--clr-gray-3);
+}
+.c-input__input::placeholder {
+  color: var(--clr-input-placeholder);
+}
+.c-input__input {
+  all: unset;
+  display: initial;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+.c-input__input-wrapper {
+  padding: 1.0625rem 0 0.8125rem 1.5rem;
+  border: 1px solid var(--clr-input-border);
+  border-radius: 8px;
+  transition: border 100ms ease-in-out;
+}
+.c-input__input-wrapper:has(> .c-input__input + .icon) {
+  padding-right: 3.125rem;
+}
+.c-input__input-wrapper:has(> .c-input__input:disabled) {
+  background-color: var(--clr-input-back-disabled);
+  cursor: no-drop;
+}
+.c-input__input-wrapper:has(> .c-input__input:focus) {
+  border: 1px solid var(--clr-input-border-focus);
+}
+.c-input__input-wrapper:has(> .c-input__input.c-input__invalid) {
+  border: 1px solid var(--clr-input-invalid);
+}
+.c-input__input-wrapper:has(> .c-input__icon) {
+  position: relative;
+}
+.c-input__icon {
+  position: absolute;
+  top: 1.125rem;
+  right: 1.125rem;
+  opacity: 0;
+}
+.c-input__icon--valid {
+  color: var(--clr-input-icon-valid);
+}
+.c-input__icon--invalid {
+  color: var(--clr-input-invalid);
+}
+.c-input .c-input__icon.c-input__icon--valid,
+.c-input .c-input__icon.c-input__icon--invalid {
+  opacity: 1;
+}
+</code></pre>
+</div>
+  </div>
+</div>
+</div>
+        </div>
+      </main>
+      <footer class="l-footer l-footer__transparent-back">
+        <div class="l-container">
+          Переиспользуемая библиотека компонентов
+        </div>
+      </footer>    </div>
+    <div id="main-nav-mobile" class="l-main-nav-mobile">
+      <div class="l-container">
+        <div class="l-main-nav-mobile__top">
+          <button
+            id="main-nav-mobile-close"
+            class="c-btn c-btn__with-icon c-btn__round c-btn--gray c-btn__size-32"
+          >
+            <svg class="icon icon--close-cross">
+              <use xlink:href="img/svg/sprite.8915b6dff5.svg#close-cross" />
+            </svg>
+          </button>
+          <div class="l-main-nav-mobile__logo">
+            <a href="/">
+              <svg class="icon icon--logo" fill="currentColor">
+                <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="c-mode-switch__container"><label class="c-switch c-mode-switch" for="mode-switch-mobile">
+      <input
+        class="c-switch__input"
+        type="checkbox"
+        id="mode-switch-mobile"
+      />
+      <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+      </svg>
+      <div class="c-switch__state">
+        <div class="c-switch__control"></div>
+      </div>
+      <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+      </svg>
+    </label> </div>
+        <nav class="l-components-nav">
+          <h4 class="l-components-nav__title--mobile">Компоненты</h4>
+          <ul>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="histogram.html"
+                >Гистограмма</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="calendar.html"
+                >Календарь</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="tooltip.html"
+                >Подсказка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="avatar.html"
+                >Аватар</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="modal.html"
+                >Модальное окно</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="skeleton.html"
+                >Заглушка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="accordeon.html"
+                >Аккордеон</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="button.html"
+                >Кнопка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link l-components-nav__link--active"
+                href="form-elements.html"
+                >Элементы форм</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/index.6e0d45e3da.bundle.js"></script>
+    <script src="js/rainbow-custom.cda56b6c87.min.js"></script>
+  </body>
+</html>

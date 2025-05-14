@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.aa1f061720.css" />
+    <title>Аккордеон</title>
+  </head>
+  <body>
+    <div class="l-page l-page--single">
+      <header class="l-header l-header--transparent-back">
+        <div class="l-container">
+          <div class="l-header__top">
+            <div id="hamburger" class="c-hamburger">
+              <button class="c-btn c-btn__with-icon c-btn__size-32" aria-label="Главное меню">
+                <svg class="icon icon--hamburger" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#hamburger" />
+                </svg>
+              </button>
+            </div>
+            <div class="l-header__logo">
+              <a href="/">
+                <svg class="icon icon--logo" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="l-header__slot-mode-switch">
+              
+              <label class="c-switch c-mode-switch" for="mode-switch">
+                <input
+                  class="c-switch__input"
+                  type="checkbox"
+                  id="mode-switch"
+                />
+                <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+                </svg>
+                <div class="c-switch__state">
+                  <div class="c-switch__control"></div>
+                </div>
+                <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+                </svg>
+              </label>      </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="l-container l-page__single">
+          <aside class="l-sidebar">
+            <h4 class="l-sidebar__title">Компоненты</h4>
+            <nav class="l-components-nav">
+              <ul>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="histogram.html">Гистограмма</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="calendar.html">Календарь</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="tooltip.html">Подсказка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="avatar.html">Аватар</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="modal.html">Модальное окно</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="skeleton.html">Заглушка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link l-components-nav__link--active" href="accordeon.html">Аккордеон</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="button.html">Кнопка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="form-elements.html">Элементы форм</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="index.html">Главная</a></li>
+              </ul>
+            </nav>
+          </aside><div class="l-page__component-wrapper">
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Аккордеон</h1>
+</div>
+<div class="l-page__component-show">
+  <section class="h-mb30">
+    <div class="c-accordeon">
+      <section class="c-collapsed">
+        <details class="c-collapsed__details">
+          <summary class="c-collapsed__summary">
+            Один
+          </summary>
+          <div class="c-collapsed__secret">
+            <p>
+              Далеко-далеко за словесными горами в стране гласных и согласных живут
+              рыбные тексты. Строчка языкового назад запятых! Силуэт великий
+              повстречался назад осталось подпоясал?
+            </p>
+          </div>
+        </details>
+      </section>
+      <section class="c-collapsed">
+        <details class="c-collapsed__details">
+          <summary class="c-collapsed__summary">Два</summary>
+          <div class="c-collapsed__secret">
+            <p>
+              Далеко-далеко за словесными горами в стране гласных и согласных живут
+              рыбные тексты. Всемогущая текста, парадигматическая одна даже большого
+              снова рекламных прямо лучше!
+            </p>
+          </div>
+        </details>
+      </section>
+      <section class="c-collapsed">
+        <details class="c-collapsed__details">
+          <summary class="c-collapsed__summary">Три</summary>
+          <div class="c-collapsed__secret">
+            <p>
+              Бросил снова взобравшись рыбного за меня но лучше она продолжил ручеек
+              заглавных необходимыми семь агентство имени, последний одна переулка
+              коварный?
+            </p>
+          </div>
+        </details>
+      </section>
+    </div>
+  </section>
+</div>
+
+<div class="l-page__component-toggler">
+  <div class="c-toggler">
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-html" checked />
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-css" />
+  
+    <div class="c-toggler__scroller">
+      <label class="c-toggler__item" for="#toggle-html">HTML</label>
+      <label class="c-toggler__item" for="#toggle-css">CSS</label>
+    </div>
+
+    <div class="c-toggler__html">
+<pre><code data-language="html">
+&lt;div class=&quot;c-accordeon&quot;&gt;
+  &lt;section class=&quot;c-collapsed&quot;&gt;
+    &lt;details class=&quot;c-collapsed__details&quot;&gt;
+      &lt;summary class=&quot;c-collapsed__summary&quot;&gt;
+        Один
+      &lt;/summary&gt;
+      &lt;div class=&quot;c-collapsed__secret&quot;&gt;
+        &lt;p&gt;
+          Содержимое раз.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;c-collapsed&quot;&gt;
+    &lt;details class=&quot;c-collapsed__details&quot;&gt;
+      &lt;summary class=&quot;c-collapsed__summary&quot;&gt;Два&lt;/summary&gt;
+      &lt;div class=&quot;c-collapsed__secret&quot;&gt;
+        &lt;p&gt;
+        Содержимое два.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;c-collapsed&quot;&gt;
+    &lt;details class=&quot;c-collapsed__details&quot;&gt;
+      &lt;summary class=&quot;c-collapsed__summary&quot;&gt;Три&lt;/summary&gt;
+      &lt;div class=&quot;c-collapsed__secret&quot;&gt;
+        &lt;p&gt;
+        Содержимое три.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/details&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+</pre></code>
+    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-collapsed {
+  --clr-summary-back: transparent;
+  --clr-summary-border: var(--clr-gray-3);
+  --size-summary-border-radius: 8px;
+  --clr-accordeon-text: var(--clr-font);
+  --clr-summary-arrow: var(--clr-sym-summary-arrow);
+}
+.c-collapsed__details {
+  background-color: var(--clr-summary-back);
+  border: 1px solid var(--clr-summary-border);
+  border-radius: var(--size-summary-border-radius, 8px);
+  padding: 0 2rem;
+  color: var(--clr-accordeon-text);
+}
+.c-collapsed__details[open] {
+  padding-bottom: 1.5rem;
+}
+.c-collapsed__details[open] .c-collapsed__summary::after {
+  transform: rotate(180deg);
+}
+.c-collapsed__details[open] summary ~ * {
+  animation: sweep 0.3s ease-in-out;
+}
+.c-collapsed__details:last-child {
+  margin-bottom: 0;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+.c-collapsed__summary {
+  position: relative;
+  padding: 1.5rem 2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  user-select: none;
+  list-style: none;
+  cursor: pointer;
+  color: var(--clr-accordeon-text);
+}
+.c-collapsed__summary::marker, .c-collapsed__summary::-webkit-details-marker {
+  display: none;
+}
+.c-collapsed__summary__summary-arrow {
+  width: 1.125rem;
+  height: 0.625rem;
+}
+.c-collapsed__summary::after {
+  width: 1.125rem;
+  height: 0.625rem;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.3125rem);
+  right: 2rem;
+  mask: url(../img/svg/icons/arrow-down.edacdf64ce.svg) no-repeat 50% 50%;
+  mask-size: cover;
+  background-color: var(--clr-summary-arrow);
+  transition: transform 200ms ease-in;
+  transform-origin: center;
+}
+.c-collapsed__secret {
+  line-height: 1.5;
+}
+</code></pre>
+</div>
+  </div>
+</div>
+</div>
+        </div>
+      </main>
+      <footer class="l-footer l-footer__transparent-back">
+        <div class="l-container">
+          Переиспользуемая библиотека компонентов
+        </div>
+      </footer>    </div>
+    <div id="main-nav-mobile" class="l-main-nav-mobile">
+      <div class="l-container">
+        <div class="l-main-nav-mobile__top">
+          <button
+            id="main-nav-mobile-close"
+            class="c-btn c-btn__with-icon c-btn__round c-btn--gray c-btn__size-32"
+          >
+            <svg class="icon icon--close-cross">
+              <use xlink:href="img/svg/sprite.8915b6dff5.svg#close-cross" />
+            </svg>
+          </button>
+          <div class="l-main-nav-mobile__logo">
+            <a href="/">
+              <svg class="icon icon--logo" fill="currentColor">
+                <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="c-mode-switch__container"><label class="c-switch c-mode-switch" for="mode-switch-mobile">
+      <input
+        class="c-switch__input"
+        type="checkbox"
+        id="mode-switch-mobile"
+      />
+      <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+      </svg>
+      <div class="c-switch__state">
+        <div class="c-switch__control"></div>
+      </div>
+      <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+      </svg>
+    </label> </div>
+        <nav class="l-components-nav">
+          <h4 class="l-components-nav__title--mobile">Компоненты</h4>
+          <ul>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="histogram.html"
+                >Гистограмма</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="calendar.html"
+                >Календарь</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="tooltip.html"
+                >Подсказка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="avatar.html"
+                >Аватар</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="modal.html"
+                >Модальное окно</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="skeleton.html"
+                >Заглушка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link l-components-nav__link--active"
+                href="accordeon.html"
+                >Аккордеон</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="button.html"
+                >Кнопка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="form-elements.html"
+                >Элементы форм</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/index.6e0d45e3da.bundle.js"></script>
+    <script src="js/rainbow-custom.cda56b6c87.min.js"></script>
+  </body>
+</html>

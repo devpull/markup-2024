@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.aa1f061720.css" />
+    <title>Аватар</title>
+  </head>
+  <body>
+    <div class="l-page l-page--single">
+      <header class="l-header l-header--transparent-back">
+        <div class="l-container">
+          <div class="l-header__top">
+            <div id="hamburger" class="c-hamburger">
+              <button class="c-btn c-btn__with-icon c-btn__size-32" aria-label="Главное меню">
+                <svg class="icon icon--hamburger" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#hamburger" />
+                </svg>
+              </button>
+            </div>
+            <div class="l-header__logo">
+              <a href="/">
+                <svg class="icon icon--logo" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="l-header__slot-mode-switch">
+              
+              <label class="c-switch c-mode-switch" for="mode-switch">
+                <input
+                  class="c-switch__input"
+                  type="checkbox"
+                  id="mode-switch"
+                />
+                <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+                </svg>
+                <div class="c-switch__state">
+                  <div class="c-switch__control"></div>
+                </div>
+                <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+                  <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+                </svg>
+              </label>      </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="l-container l-page__single">
+          <aside class="l-sidebar">
+            <h4 class="l-sidebar__title">Компоненты</h4>
+            <nav class="l-components-nav">
+              <ul>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="histogram.html">Гистограмма</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="calendar.html">Календарь</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="tooltip.html">Подсказка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link l-components-nav__link--active" href="avatar.html">Аватар</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="modal.html">Модальное окно</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="skeleton.html">Заглушка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="accordeon.html">Аккордеон</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="button.html">Кнопка</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="form-elements.html">Элементы форм</a></li>
+                  <li class="l-components-nav__item"><a class="l-components-nav__link" href="index.html">Главная</a></li>
+              </ul>
+            </nav>
+          </aside><div class="l-page__component-wrapper">
+<div class="l-page__component-title-wrapper">
+  <h1 class="l-page__component-title">Аватар</h1>
+</div>
+<div class="l-page__component-show">
+  <picture class="c-avatar">
+    <source media="(min-width: 900px)" srcset="img/cog@2x.cc537c9a8e.png 2x" />
+    <img class="c-avatar__image" height="160" width="160" src="img/cog-raw.926273b205.png" alt="Аватар пользователя">
+  </picture></div>
+
+<div class="l-page__component-toggler">
+  <div class="c-toggler">
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-html" checked />
+    <input name="toggler" class="c-toggler__input" type="radio" id="#toggle-css" />
+  
+    <div class="c-toggler__scroller">
+      <label class="c-toggler__item" for="#toggle-html">HTML</label>
+      <label class="c-toggler__item" for="#toggle-css">CSS</label>
+    </div>
+
+    <div class="c-toggler__html">
+<pre><code data-language="html">
+&lt;picture class=&quot;c-avatar&quot;&gt;
+  &lt;source media=&quot;(min-width: 900px)&quot; srcset=&quot;img/cog@2x.png 2x&quot; /&gt;
+  &lt;img class=&quot;c-avatar__image&quot; height=&quot;160&quot; width=&quot;160&quot; src=&quot;img/cog-raw.png&quot; alt=&quot;Аватар пользователя&quot;&gt;
+&lt;/picture&gt;
+</pre></code>
+    </div>
+<div class="c-toggler__css">
+<pre><code data-language="css">
+.c-avatar {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+}
+.c-avatar__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+</code></pre>
+</div>
+  </div>
+</div>
+</div>
+        </div>
+      </main>
+      <footer class="l-footer l-footer__transparent-back">
+        <div class="l-container">
+          Переиспользуемая библиотека компонентов
+        </div>
+      </footer>    </div>
+    <div id="main-nav-mobile" class="l-main-nav-mobile">
+      <div class="l-container">
+        <div class="l-main-nav-mobile__top">
+          <button
+            id="main-nav-mobile-close"
+            class="c-btn c-btn__with-icon c-btn__round c-btn--gray c-btn__size-32"
+          >
+            <svg class="icon icon--close-cross">
+              <use xlink:href="img/svg/sprite.8915b6dff5.svg#close-cross" />
+            </svg>
+          </button>
+          <div class="l-main-nav-mobile__logo">
+            <a href="/">
+              <svg class="icon icon--logo" fill="currentColor">
+                <use xlink:href="img/svg/sprite.8915b6dff5.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="c-mode-switch__container"><label class="c-switch c-mode-switch" for="mode-switch-mobile">
+      <input
+        class="c-switch__input"
+        type="checkbox"
+        id="mode-switch-mobile"
+      />
+      <svg class="icon icon--sun c-mode-switch__icon-light" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#sun"></use>
+      </svg>
+      <div class="c-switch__state">
+        <div class="c-switch__control"></div>
+      </div>
+      <svg class="icon icon--moon c-mode-switch__icon-dark" fill="currentColor">
+        <use xlink:href="img/svg/sprite.8915b6dff5.svg#moon"></use>
+      </svg>
+    </label> </div>
+        <nav class="l-components-nav">
+          <h4 class="l-components-nav__title--mobile">Компоненты</h4>
+          <ul>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="histogram.html"
+                >Гистограмма</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="calendar.html"
+                >Календарь</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="tooltip.html"
+                >Подсказка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link l-components-nav__link--active"
+                href="avatar.html"
+                >Аватар</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="modal.html"
+                >Модальное окно</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="skeleton.html"
+                >Заглушка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="accordeon.html"
+                >Аккордеон</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="button.html"
+                >Кнопка</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="form-elements.html"
+                >Элементы форм</a
+              >
+            </li>
+            <li class="l-components-nav__item l-components-nav__item--mobile">
+              <a
+                class="l-components-nav__link"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/index.6e0d45e3da.bundle.js"></script>
+    <script src="js/rainbow-custom.cda56b6c87.min.js"></script>
+  </body>
+</html>
